@@ -1,0 +1,188 @@
+@import url(fonts.css);
+@import "http://webfonts.ru/import/sreda.css";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700,600,400&subset=cyrillic-ext,latin);
+
+/* ==========================================================================
+    HTML | GLOBAL
+   ========================================================================== */
+html { min-width: 1263px; }
+body { font-size: 13px; color: #444; /background: url(../final-design/44.png) top left no-repeat; }
+
+.pure-g [class *="pure-u"] { font-family: 'Open Sans', sans-serif !important; font-weight: 500; box-sizing: border-box; } /* тест */
+
+/* ==========================================================================
+    TYPOGRAPHY
+   ========================================================================== */
+
+p { margin: 0 0 .5em; line-height: 1.8em; }
+
+a { color: #24ACC0;
+    text-decoration: none;
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+a:hover { color: #1CCBE5; }
+
+/* align text */
+.align-left { text-align: left; }
+.align-center { text-align: center; }
+.align-right { text-align: right; }
+/* size text */
+.small { font-size: .9em  }
+.medium { font-size: 1.2em;  }
+.large { font-size: 1.5em; }
+.extralarge { font-size: 2em; }
+.uppercase { text-transform: uppercase;  }
+.lowercase { text-transform: lowercase; }
+
+
+/* ==========================================================================
+    HELPER
+   ========================================================================== */
+
+/* float */
+.push-left { float: left; }
+.push-center { float: none; margin: 0 auto; }
+.push-right { float: right; }
+.clearfix { clear: both; }
+
+/* margin */
+.no-m { margin: 0px; }
+.m-t { margin-top: 1em; }
+.m-r { margin-right: 1em; }
+.m-b { margin-bottom: 1em; }
+.m-l { margin-left: 1em; }
+
+
+
+/* padding */
+.no-p { padding: 0px; }
+.p-t { padding-top: 1em; }
+.p-r { padding-right: 1em; }
+.p-b { padding-bottom: 1em; }
+.p-l { padding-left: 1em; }
+
+/* ==========================================================================
+    LAYOUT
+   ========================================================================== */
+
+/* Content Styles */
+
+/* Move the layout over so we can fit the main-menu + filter in on the left */
+.layout { position: relative; }
+.layout.filter-pane-open { padding-left:335px; /* "left col (main-menu + filter)" width */ }
+
+/* These are position:fixed; elements that will be in the left 355px of the screen */
+.main-menu, .pre-filter-panel { position: fixed; top: 0; bottom: 0; overflow: auto; }
+.main-menu {
+    width:80px; height: 100%;
+    margin-left:-335px; /* left col width (main-menu + filter) */
+}
+
+.pre-filter-panel { width:255px; height: 100%; margin-left: -255px; }
+
+
+/* ==========================================================================
+    TEMPLATE
+   ========================================================================== */
+
+/* _____ MAIN-MENU _____ */
+
+.main-menu { display: table; background: #004d57; }
+.main-menu .nav-inner { display: table-cell; vertical-align: middle; }
+/* выбор языка */
+.lang-select { position: absolute; width: 100%; top: 0; text-align: center; }
+/* отступы между пунктами */
+.main-menu .pure-menu-link { padding: 1em 0;   font-weight: 400; }
+/* цвет пункта меню */
+.pure-menu-link { color: #24ACC0; }
+/* цвет активного пункта меню */
+.pure-menu-active .pure-menu-link { color: #eee; }
+/* убрали выделение пункта активного раздела */
+.main-menu .pure-menu-active>.pure-menu-link,
+.main-menu .pure-menu-active>.pure-menu-link:hover,
+.main-menu .pure-menu-active>.pure-menu-link:focus  { background-color: transparent; }
+/* подсветили при наведении */
+.main-menu .pure-menu-link:hover,
+.main-menu .pure-menu-link:focus { background-color: #115861; }
+
+
+/* _____ PRE-FILTER-PANEL _____ */
+
+.pre-filter-panel { background: #00788a; text-align: center; }
+
+.company > a { text-transform: uppercase; letter-spacing: .2em; font-weight: 300; color: #fff; }
+.company sup { top: -1em; font-size: .4em; }
+
+.filter-item_name { margin: 3em 0 .3em; font-family: 'Sreda'; font-size: .85em; letter-spacing: .1em; text-transform: uppercase; color: #00bbd6; }
+
+/* перекрасили текст в кнопках */
+.pre-filter-panel .button { color: #eee; }
+
+
+/* _____ MAIN CONTENT _____ */
+
+/* content-box */
+.main-content { position: static; width: 100%; margin: 0; padding: 0; }
+.content-box { padding: 10px 20px; }
+.box-border-b { border-bottom: 1px solid #24ACC0; }
+.boxname { font-family: 'Sreda'; font-weight: 600; letter-spacing: .1em; }
+
+.content-subtitle { margin-bottom: 0.3em; text-transform: uppercase; color: #999; letter-spacing: normal; }
+
+.user-select { width: auto; margin-top: -7px; margin-right: -12px; }
+/* убрали иконку справа в выпадающем меню */
+.pure-menu-has-children>.pure-menu-link:after,
+.pure-menu-horizontal .pure-menu-has-children>.pure-menu-link:after { content: none; }
+
+/* фильтры - выбор услуг */
+.pre-filter-panel_toolbar .button:hover { color: #eee; }
+
+.filter-object { padding-right: 3em; }
+.filter-object p { margin-bottom: 15px; height: 2em; }
+.appart { margin-top: -10px; }
+
+/* полный фильтр */
+.full-filter-object_wrap { position: relative; width: 100%; }
+.full-filter-object { position: absolute; top:49px; width: 100%; background: #fff; border-top: 1px solid #ccc; border-right: none; padding-bottom: 2em; z-index: 99; }
+.filter-object-form { width: 100%; }
+.filter-object-form .width-90 { width: 90%; }
+.filter-object-form label { font-size: .85em; }
+/* костыль - немного переоределили ширину сетки */
+.filter-object-form label.pure-u-1-2 { width: 49%; }
+
+/* object-list */
+.object-list { margin-top: 2em; }
+.object-list_item { margin-bottom: 4em;  }
+.object-list_item .object_wrap { margin-right: 1em; }
+.object-list_item img { max-width: 100%; }
+.object-list_item .obj-name { margin:1em 0 0; font-size: 1.1em; line-height: 1.3em; text-transform: uppercase; }
+.object-list_item .district { margin-bottom: 1em; font-size: .9em; color: #999; }
+.object-list_item .obj-description {  }
+.object-list_item .item_prise { margin: 0; font-size: 1.1em; color: #1a5f68; }
+
+/*___ страница объекта ___*/
+.object-info {  }
+
+.object-title { margin: 0 0 1em; font-family: 'Sreda'; font-size: 1.7em; line-height: 1; font-weight: 500; }
+.object-title .object-articul { font-family: 'Avenir Next', sans-serif; font-size: .6em; }
+/* добавить в избранное */
+.object-title .add-favorites { color: #999; unicode-bidi: bidi-override; direction: rtl; }
+.object-title .add-favorites:hover { color: #FFCB00; }
+.add-favorites.active { color: #FFCB00 !important; }
+.add-favorites.active:before { position: absolute; font-family: FontAwesome; content: "\f005"; }
+
+/* описание объекта */
+.object-content { margin-bottom: 1.5em; }
+
+
+/* цена */
+.object-price .fa-stack { font-size: .85em; color: #24ACC0; }
+
+
+/* _____ FOOTER _____ */
+.footer { height: 120px; margin-top: 50px; color: #999; }
+.footer-menu { font-family: 'Sreda'; font-size: 1.2em; }
+.footer-menu ul { border-top: 1px solid #eee; }
+.footer-menu a {   padding: .5em 2em; color: #999; }

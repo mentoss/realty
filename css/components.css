@@ -1,0 +1,104 @@
+/* _____ BUTTON _____ */
+
+.button { margin: 3px 1px; background: transparent; border: 1px solid #24ACC0; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; border-radius: 5px; font-size: .85em ; }
+p .button { padding: .3em .6em; }
+.button:hover,
+.button:focus { background: #2f8f9d;  border: 1px solid #2f8f9d; color: #eee; }
+
+.b_active,
+.b_active:hover,
+.b_active:focus { background: #004d57;  border: 1px solid #004d57; color: #eee; }
+
+.b_active a,
+.b_active a:hover { color: #eee; }
+
+.b_shadow { box-shadow: 0px 0px 1px #555; }
+.b_shadow:active { box-shadow: inset 0px 0px 1px #555; }
+
+/* группировка кнопок */
+.button-toolbar>.button-group { margin-right: 10px; float: left; }
+.button-toolbar .button { margin: 0px; }
+.button-group>.button:first-child {
+  -webkit-border-radius: 5px 0 0 5px;
+  -moz-border-radius: 5px 0 0 5px;
+  -ms-border-radius: 5px 0 0 5px;
+  -o-border-radius: 5px 0 0 5px;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #4d838a;
+}
+.button-group>.button {
+  float: left;
+  margin: 0px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  border-left: 0;
+}
+.button-group>.button:last-child {
+  -webkit-border-radius: 0 5px 5px 0;
+  -moz-border-radius: 0 5px 5px 0;
+  -ms-border-radius: 0 5px 5px 0;
+  -o-border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 5px 0;
+}
+.button-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.button-small { font-size: .85em; }
+.button-large { font-size: 1.1em; }
+.button-xlarge { font-size: 1.25em; }
+
+/* _____ BADGE _____ */
+
+.badge {
+    padding: 0.1em 0.5em;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+.badge.red {
+  background: #D56666;
+}
+.badge.green {
+  background: #008A60;
+}
+.badge.blue {
+  background: #00788A;
+}
+.badge.grey {
+  background: gray;
+}
+
+
+/* _____ ICON-WORKS _____ */
+
+.ico_w { font-family: 'icon-worksregular'; font-style: inherit; }
+
+/* _____ jQueryFormStyler _____ */
+/* полный фильтр объектов */
+.filter-object-form label { line-height: 3em; }
+/* селект */
+.filter-object-form .jq-selectbox.jqselect { margin-bottom: 1em; }
+.filter-object-form .jq-selectbox__select { border: 1px solid #24ACC0; background: none; box-shadow: none; line-height: 30px; font-family: inherit; }
+.filter-object-form .jq-selectbox__select:hover { background-color: #fff; }
+.filter-object-form .jq-selectbox__select .jq-selectbox__trigger { border-left: none; }
+.filter-object-form .jq-selectbox__select .jq-selectbox__trigger .jq-selectbox__trigger-arrow { border-top: 5px solid #24ACC0; opacity: 1; }
+/* пункты селекта */
+.filter-object-form .jq-selectbox li.selected { background-color: #b1e8f0; color: #444;}
+.filter-object-form .jq-selectbox li:hover { background-color: #24ACC0; color: #fff;}
+.filter-object-form .jq-selectbox__dropdown { line-height: 18px; font-family: inherit; }
+/* чекбоксы */
+.filter-object-form .jq-checkbox { border: 1px solid #24ACC0; background: none; box-shadow: none; padding: 2px; }
+.filter-object-form .jq-checkbox.checked .jq-checkbox__div,
+.filter-object-form label:hover .jq-checkbox .jq-checkbox__div { width: 13px; height: 11px; margin: 2px 0 0 0px; background: url(../js/jQueryFormStyler/checkbox.png) no-repeat; box-shadow: none; }
+.filter-object-form .jq-checkbox.checked .jq-checkbox__div { background-position: 0px 0px !important; }
+.filter-object-form label:hover .jq-checkbox .jq-checkbox__div { background-position: 0px -11px; }

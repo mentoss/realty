@@ -1,0 +1,13 @@
+.noUi-horizontal { height: 2px; }
+.noUi-target { border-radius: 0px; border: none; background: #D3D3D3; box-shadow: none; }
+
+.noUi-connect { height: 2px !important; top: 3px; background: #3FB8AF; box-shadow:none; }
+.noUi-origin { border-radius: 0px;}
+
+.noUi-background { height: 2px; top: 3px; background: #D3D3D3; box-shadow: none; }
+
+.noUi-base { height: 8px; top: -3px; border-left: 2px solid #D3D3D3; border-right: 2px solid #D3D3D3; }
+
+.noUi-horizontal .noUi-handle { top: -12px; width: 45px; height: 25px; padding: 4px 3px; font-size: .85em; font-family: tahoma; cursor: ew-resize; }
+.noUi-handle { border: 1px solid #24ACC0; box-shadow:none; border-radius: 5px; }
+.noUi-handle:after, .noUi-handle:before { content: none; }
