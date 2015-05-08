@@ -40,6 +40,8 @@ a:hover { color: #1CCBE5; }
 /* color */
 .t-blue { color: #1a8696; }
 
+.text-elegant { font-family: 'Sreda'; letter-spacing: .1em; }
+
 
 /* ==========================================================================
     HELPER
@@ -136,7 +138,7 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 .box-border-b { border-bottom: 1px solid #24ACC0; }
 .boxname { font-family: 'Sreda'; font-weight: 600; letter-spacing: .1em; }
 
-.content-subtitle { margin-bottom: 0.3em; text-transform: uppercase; color: #999; letter-spacing: normal; }
+.content-subtitle { margin-bottom: 0.3em; text-transform: uppercase; color: #999; }
 
 .user-select { width: auto; margin-top: -7px; margin-right: -12px; }
 /* убрали иконку справа в выпадающем меню */
@@ -190,9 +192,17 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 .object-scheme .ico_w { position: absolute; top: 30%; left: 40px; color: #999; font-size: 3em; }
 .object-scheme img { max-width: 100px; border: 1px solid #eee; }
 
-/* подробная информация */
+/* подробная информация об объекте */
 .object-features { margin-top: 2em; }
 .object-features li { display: inline-block; width: 49.5%; margin-bottom: 1em; letter-spacing: normal;}
+
+/* оставьте телефон */
+.phone-form { text-align: center; }
+.phone-form input { box-sizing: border-box; width: 100%; border: 1px solid #ccc; padding: .6em; font-size: 1.1em; }
+.phone-form input:first-child { border-bottom: none; }
+.phone-form .action-submit { width: 298px; border-radius: 0 0 6px 6px; background: #004D57; padding: .7em 1em; text-transform: uppercase; color: #fff; }
+
+
 
 
 /* _____ FOOTER _____ */

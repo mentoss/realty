@@ -75,7 +75,7 @@ p .button { padding: .3em .6em; }
 
 /* _____ WELL _____ */
 
-.well { background: #eceae8; border-radius: 5px; }
+.well { background: #eceae8; border-radius: 5px; padding: 20px; }
 .well.red { background: #DA8686; }
 .well.green { background: #3FC89E; }
 .well.blue { background: #46A9B8; }
@@ -126,8 +126,12 @@ p .button { padding: .3em .6em; }
 .filter-object-form .jq-selectbox li:hover { background-color: #24ACC0; color: #fff;}
 .filter-object-form .jq-selectbox__dropdown { line-height: 18px; font-family: inherit; }
 /* чекбоксы */
-.filter-object-form .jq-checkbox { border: 1px solid #24ACC0; background: none; box-shadow: none; padding: 2px; }
+.filter-object-form .jq-checkbox { border: 1px solid #24ACC0; background: none; box-shadow: none; padding: 2px; overflow: visible !important; }
 .filter-object-form .jq-checkbox.checked .jq-checkbox__div,
 .filter-object-form label:hover .jq-checkbox .jq-checkbox__div { width: 13px; height: 11px; margin: 2px 0 0 0px; background: url(../js/jQueryFormStyler/checkbox.png) no-repeat; box-shadow: none; }
 .filter-object-form .jq-checkbox.checked .jq-checkbox__div { background-position: 0px 0px !important; }
 .filter-object-form label:hover .jq-checkbox .jq-checkbox__div { background-position: 0px -11px; }
+
+
+/* _____ FOTORAMA _____ */
+
