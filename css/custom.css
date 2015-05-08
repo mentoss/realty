@@ -181,17 +181,15 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 .object-title .add-favorites:hover { color: #FFCB00; }
 .add-favorites.active { color: #FFCB00 !important; }
 .add-favorites.active:before { position: absolute; font-family: FontAwesome; content: "\f005"; }
-
 /* описание объекта */
 .object-content { margin-bottom: 1.5em; }
-
 /* цена */
 .object-price .fa-stack { font-size: .85em; color: #24ACC0; }
 /* схема объекта - картинка */
 .object-scheme { position: relative;  }
-.object-scheme .ico_w { position: absolute; top: 30%; left: 40px; color: #999; font-size: 3em; }
+.object-scheme_wrap { width: 101px; position: absolute; background: rgba(0, 0, 0, 0.3); top: 0px; bottom: 0px; }
+.object-scheme .ico_w { position: absolute; top: 30%; left: 35px; color: #999; font-size: 3em; color: #eee; }
 .object-scheme img { max-width: 100px; border: 1px solid #eee; }
-
 /* подробная информация об объекте */
 .object-features { margin-top: 2em; }
 .object-features li { display: inline-block; width: 49.5%; margin-bottom: 1em; letter-spacing: normal;}

@@ -133,5 +133,6 @@ p .button { padding: .3em .6em; }
 .filter-object-form label:hover .jq-checkbox .jq-checkbox__div { background-position: 0px -11px; }
 
 
-/* _____ FOTORAMA _____ */
-
+/* _____ FOTORAMA ( кастомизируем ) _____ */
+.fotorama__arr { height: 100% !important; top: 17px !important; background: rgba(0, 0, 0, 0.6) !important; width: 50px !important; }
+.fotorama__arr.fotorama__arr--next { right: 0px; }
