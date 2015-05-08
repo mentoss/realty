@@ -28,6 +28,9 @@
     <!-- jQueryFormStyler -->
     <link href="js/jQueryFormStyler/jquery.formstyler.css" rel="stylesheet">
     <script src="js/jQueryFormStyler/jquery.formstyler.min.js"></script>
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
     <!-- fotorama.css & fotorama.js. -->
     <link  href="js/fotorama/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
     <script src="js/fotorama/fotorama.js"></script> <!-- 16 KB -->
@@ -48,8 +51,9 @@
             <div class="nav-inner">
                 <div class="pure-menu align-center uppercase">
                     <div class="lang-select">
-                        <a href="">
-                            <img src="img/flag_ru.png" alt="">Русский
+                        <a href="" class="caps">
+                            <img src="img/flag_ru.png" alt="">
+                            <br>Русский
                         </a>
                     </div>
                     <ul class="pure-menu-list align-center">
@@ -305,12 +309,18 @@
 
                                 <div class="object-price pure-u-1-2">
                                     <p class="content-subtitle no-m">План</p>
-                                    <div class="object-place"></div>
+                                    <div class="object-scheme">
+                                        <a class="fancybox" href="img/placeholder/house-plan.jpg">
+                                           <i class="ico_w">&#107;</i>
+                                           <div class="wrap"></div>
+                                           <img src="img/placeholder/house-plan.jpg" alt="">
+                                       </a>
+                                    </div>
                                 </div>
 
-                                <div class="pure-u-1-1">
-                                    <div class="fotorama" data-width="700" data-ratio="700/467" data-max-width="100%" data-nav="thumbs">
-                                        <img src="img/placeholder/slider/1-lo.jpg">
+                                <div class="object-slider m-t pure-u-1-1">
+                                    <div class="fotorama" data-nav="thumbs" data-width="700" data-arrows="true" data-click="false" data-swipe="false" data-ratio="3/2" data-max-width="100%">
+                                        <a class="fancybox fotorama__select" href="img/placeholder/slider/1-lo.jpg"><img src="img/placeholder/slider/1-lo.jpg" alt=""></a>
                                         <img src="img/placeholder/slider/2-lo.jpg">
                                         <img src="img/placeholder/slider/9-lo.jpg">
                                         <img src="img/placeholder/slider/6-lo.jpg">
@@ -323,6 +333,55 @@
                                     </div>
                                 </div>
 
+                                <div class="object-features pure-u-1-1">
+                                    <ul class="unstyled">
+                                        <li>
+                                            <span class="content-subtitle no-m">Кол-во комнат</span><br>
+                                            <p>6</p>
+                                        </li>
+                                        <li>
+                                            <span class="content-subtitle no-m">Мебель</span><br>
+                                            <p>Очень хорошая и новая мебель</p>
+                                        </li>
+                                        <li>
+                                            <span class="content-subtitle no-m">Площадь</span><br>
+                                            <p>200 м<sup>2</sup></p>
+                                        </li>
+                                        <li>
+                                            <span class="content-subtitle no-m">Здание</span><br>
+                                            <p>Частный дом</p>
+                                        </li>
+                                        <li>
+                                            <span class="content-subtitle no-m">Камин</span><br>
+                                            <p>Есть</p>
+                                        </li>
+                                        <li>
+                                            <span class="content-subtitle no-m">Интерьер</span><br>
+                                            <p>Современный и стильный</p>
+                                        </li>
+                                        <li>
+                                            <span class="content-subtitle no-m">Парковка</span><br>
+                                            <p>На две машины</p>
+                                        </li>
+                                        <li>
+                                            <span class="content-subtitle no-m">Оборудование</span><br>
+                                            <p>Стиральная машина, посудомоечная машина, пылесос, кондей</p>
+                                        </li>
+                                        <li>
+                                            <span class="content-subtitle no-m">Охрана</span><br>
+                                            <p>Злая собака</p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="object-tags pure-u-1-1">
+                                    <p class="content-subtitle no-m">Тэги</p>
+                                    <a href="" class="button pure-button">Частный дом</a>
+                                    <a href="" class="button pure-button">Рублёвка</a>
+                                    <a href="" class="button pure-button">Парковка</a>
+                                    <a href="" class="button pure-button">Охрана</a>
+                                </div>
+
                              </div>
 
 
@@ -330,7 +389,28 @@
 
                         <div class="pure-u-1-24"></div>
 
-                        <div class="pure-u-10-24">asdf</div>
+                        <div class="pure-u-10-24">
+                            <div class="content-box well">
+                                <p>Свяжитесь с нашим специалистом для консультации или просто оставьте номер телефона и мы вам перезвоним</p>
+                                <div class="media">
+                                    <div class="media-left media-middle">
+                                        <img class="media-object" src="img/placeholder/manager.png" >
+                                    </div>
+                                    <div class="media-body">
+                                        <p class="media-heading no-m medium caps">Александра Петрова</p>
+                                        <p class="small">Ведущий консультант</p>
+                                        <p class="medium t-blue">+7 495 123-45-67</p>
+                                    </div>
+                                </div>
+                                <div class="order-form m-t">
+                                    <form class="form split-form_upright responsive-form" action="">
+                                        <input type="text" placeholder="Имя">
+                                        <input type="tel">
+                                        <button>Оставить заявку на просмотр</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
 
@@ -383,7 +463,7 @@
             $(".priseFilter, .floorFilter, .areaFilter").Link('lower').to('-inline-');
             $(".priseFilter, .floorFilter, .areaFilter").Link('upper').to('-inline-');
 
-             // открыть/закрыть фильтры
+             // открыть/закрыть фильтр
             function facechange(objName) {
                 if ($(objName).css('display') == 'none') {
                     $(objName).animate({
@@ -402,6 +482,11 @@
                     $('input, select, checkbox').styler();
                 });
             })(jQuery);
+
+            // fancybox init
+            $(document).ready(function() {
+                $(".fancybox").fancybox();
+            });
         </script>
 
 

@@ -16,7 +16,7 @@ body { font-size: 13px; color: #444; /background: url(../final-design/44.png) to
 
 p { margin: 0 0 .5em; line-height: 1.8em; }
 
-a { color: #24ACC0;
+a { color: #1a8696;
     text-decoration: none;
     -webkit-transition: color 0.3s ease;
     -moz-transition: color 0.3s ease;
@@ -28,13 +28,17 @@ a:hover { color: #1CCBE5; }
 .align-left { text-align: left; }
 .align-center { text-align: center; }
 .align-right { text-align: right; }
+
 /* size text */
 .small { font-size: .9em  }
-.medium { font-size: 1.2em;  }
+.medium { font-size: 1.15em;  }
 .large { font-size: 1.5em; }
 .extralarge { font-size: 2em; }
-.uppercase { text-transform: uppercase;  }
+.caps { text-transform: uppercase;  }
 .lowercase { text-transform: lowercase; }
+
+/* color */
+.t-blue { color: #1a8696; }
 
 
 /* ==========================================================================
@@ -62,6 +66,9 @@ a:hover { color: #1CCBE5; }
 .p-r { padding-right: 1em; }
 .p-b { padding-bottom: 1em; }
 .p-l { padding-left: 1em; }
+
+/* list */
+ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 
 /* ==========================================================================
     LAYOUT
@@ -176,9 +183,16 @@ a:hover { color: #1CCBE5; }
 /* описание объекта */
 .object-content { margin-bottom: 1.5em; }
 
-
 /* цена */
 .object-price .fa-stack { font-size: .85em; color: #24ACC0; }
+/* схема объекта - картинка */
+.object-scheme { position: relative;  }
+.object-scheme .ico_w { position: absolute; top: 30%; left: 40px; color: #999; font-size: 3em; }
+.object-scheme img { max-width: 100px; border: 1px solid #eee; }
+
+/* подробная информация */
+.object-features { margin-top: 2em; }
+.object-features li { display: inline-block; width: 49.5%; margin-bottom: 1em; letter-spacing: normal;}
 
 
 /* _____ FOOTER _____ */

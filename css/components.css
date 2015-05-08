@@ -1,6 +1,6 @@
 /* _____ BUTTON _____ */
 
-.button { margin: 3px 1px; background: transparent; border: 1px solid #24ACC0; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; border-radius: 5px; font-size: .85em ; }
+.button { margin: 3px 1px; background: transparent; border: 1px solid #24ACC0; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; border-radius: 5px; font-size: .85em ; font-weight: 600; }
 p .button { padding: .3em .6em; }
 .button:hover,
 .button:focus { background: #2f8f9d;  border: 1px solid #2f8f9d; color: #eee; }
@@ -12,7 +12,7 @@ p .button { padding: .3em .6em; }
 .b_active a,
 .b_active a:hover { color: #eee; }
 
-.b_shadow { box-shadow: 0px 0px 1px #555; }
+.b_shadow { box-shadow: 0px 0px 1px #004D57; }
 .b_shadow:active { box-shadow: inset 0px 0px 1px #555; }
 
 /* группировка кнопок */
@@ -53,6 +53,8 @@ p .button { padding: .3em .6em; }
 .button-large { font-size: 1.1em; }
 .button-xlarge { font-size: 1.25em; }
 
+
+
 /* _____ BADGE _____ */
 
 .badge {
@@ -64,26 +66,53 @@ p .button { padding: .3em .6em; }
     border-radius: 5px;
     color: white;
 }
+.badge.red { background: #D56666; }
+.badge.green { background: #008A60; }
+.badge.blue { background: #00788A; }
+.badge.grey { background: gray; }
 
-.badge.red {
-  background: #D56666;
-}
-.badge.green {
-  background: #008A60;
-}
-.badge.blue {
-  background: #00788A;
-}
-.badge.grey {
-  background: gray;
-}
+
+
+/* _____ WELL _____ */
+
+.well { background: #eceae8; border-radius: 5px; }
+.well.red { background: #DA8686; }
+.well.green { background: #3FC89E; }
+.well.blue { background: #46A9B8; }
+.well.grey { background: gray; }
+
+
+
+/* _____ MEDIA _____ */
+
+.media { margin-top: 15px; }
+.media:first-child { margin-top: 0; }
+.media,
+.media-body { overflow: hidden; zoom: 1; }
+.media-body { width: 10000px; }
+.media-object { display: block; }
+.media-right,
+.media > .pull-right { padding-left: 10px; }
+.media-left,
+.media > .pull-left { padding-right: 10px; }
+.media-left,
+.media-right,
+.media-body { display: table-cell; vertical-align: top; }
+.media-middle { vertical-align: middle; }
+.media-bottom { vertical-align: bottom; }
+.media-heading { margin-top: 0; margin-bottom: 5px; line-height: 1; }
+.media-list { padding-left: 0; list-style: none; }
+
 
 
 /* _____ ICON-WORKS _____ */
 
 .ico_w { font-family: 'icon-worksregular'; font-style: inherit; }
 
+
+
 /* _____ jQueryFormStyler _____ */
+
 /* полный фильтр объектов */
 .filter-object-form label { line-height: 3em; }
 /* селект */
