@@ -154,7 +154,7 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 
 /* полный фильтр */
 .full-filter-object_wrap { position: relative; width: 100%; }
-.full-filter-object { position: absolute; top:49px; width: 100%; background: #fff; border-top: 1px solid #ccc; border-right: none; padding-bottom: 2em; z-index: 99; }
+.full-filter-object { position: absolute; top:46px; width: 100%; background: #fff; border-top: 1px solid #ccc; border-right: none; padding-bottom: 2em; z-index: 99; }
 .filter-object-form { width: 100%; }
 .filter-object-form .width-90 { width: 90%; }
 .filter-object-form label { font-size: .85em; }
