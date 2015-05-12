@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+
+    <title>Статья</title>
+
+    <!-- LAYOUT ------------------------->
+    <link rel="stylesheet" href="css/core/normalize/base-min.css">
+    <link rel="stylesheet" href="css/core/normalize/base-context-min.css">
+    <link rel="stylesheet" href="css/core/pure-nr-min.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- COMPONENTS --------------------->
+    <!-- jQuery-->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <!-- icon-fonts -->
+    <link rel="stylesheet" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fonts/icon-works_v1/icon-works.css">
+    <!-- The noUiSlider script and stylesheet -->
+    <link href="js/noUiSlider/jquery.nouislider.min.css" rel="stylesheet">
+    <link href="js/noUiSlider/nouislider.custom.css" rel="stylesheet">
+    <script src="js/noUiSlider/jquery.nouislider.all.min.js"></script>
+    <!-- jQueryFormStyler -->
+    <link href="js/jQueryFormStyler/jquery.formstyler.css" rel="stylesheet">
+    <script src="js/jQueryFormStyler/jquery.formstyler.min.js"></script>
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <!-- fotorama.css & fotorama.js. -->
+    <link href="js/fotorama/fotorama.css" rel="stylesheet">
+    <script src="js/fotorama/fotorama.js"></script>
+    <!-- maskedinput -->
+    <script src="js/jquery.maskedinput.min.js" type="text/javascript"></script>
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/ie8.css">
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div class="layout filter-pane-open pure-g">
+
+        <!-- MAIN MENU ------------------------------------------------------------->
+        <div class="main-menu pure-u">
+            <div class="nav-inner">
+                <div class="pure-menu align-center caps">
+                    <div class="lang-select">
+                        <a href="" class="caps">
+                            <img src="img/flag_ru.png" alt="">
+                            <br>Русский
+                        </a>
+                    </div>
+                    <ul class="pure-menu-list align-center">
+                        <li class="pure-menu-item pure-menu-active">
+                            <a href="#" class="pure-menu-link">
+                                <i class="ico_w fa-3x">&#199;</i>
+                                <br>Главная
+                            </a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="#" class="pure-menu-link">
+                                <i class="ico_w fa-3x">&#75;</i>
+                                <br>Поиск
+                                <br>объектов
+                            </a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="#" class="pure-menu-link">
+                                <i class="ico_w fa-3x">&#65;</i>
+                                <br>Услуги
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- SEARCH PRE-FILTER PANEL ----------------------------------------------->
+        <div class="pre-filter-panel pure-u">
+
+            <h1 class="company">
+                <a href="#">Evans<sup>&trade;</sup></a>
+            </h1>
+
+            <div class="pre-filter-item">
+                <div class="filter-item_name">Cтраны</div>
+
+                <div class="filter-item_select">
+                    <a class="button b_active btn-on-bg pure-button">Англия</a>
+                    <a class="button btn-on-bg pure-button">США</a>
+                    <a class="button btn-on-bg pure-button">Германия</a>
+                    <br>
+                    <a class="button btn-on-bg pure-button"><i class="fa fa-bars"></i> Выбрать из списка</a>
+                </div>
+            </div>
+
+            <div class="pre-filter-item">
+                <div class="filter-item_name">Города</div>
+
+                <div class="pre-filter-item_select">
+                    <a class="button b_active btn-on-bg pure-button">Англия</a>
+                    <a class="button btn-on-bg pure-button">США</a>
+                    <a class="button btn-on-bg pure-button">Германия</a>
+                    <br>
+                    <a class="button btn-on-bg pure-button"><i class="fa fa-bars"></i> Выбрать из списка</a>
+                </div>
+            </div>
+
+            <div class="pre-filter-item">
+                <div class="filter-item_name">Услуги</div>
+
+                <div class="filter-item_select">
+                    <a class="button btn-on-bg pure-button">Англия</a>
+                    <a class="button b_active btn-on-bg pure-button">США</a>
+                    <a class="button btn-on-bg pure-button">Германия</a>
+                    <br>
+                    <a class="button btn-on-bg pure-button"><i class="fa fa-bars"></i> Выбрать из списка</a>
+                </div>
+            </div>
+
+            <div class="pre-filter-item">
+                <div class="filter-item_name">Тип недвижимости</div>
+
+                <div class="filter-item_select">
+                    <a class="button btn-on-bg pure-button">Англия</a>
+                    <a class="button btn-on-bg pure-button">США</a>
+                    <a class="button btn-on-bg pure-button">Германия</a>
+                    <br>
+                    <a class="button btn-on-bg pure-button"><i class="fa fa-bars"></i> Выбрать из списка</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- MAIN CONTENT ---------------------------------------------------------->
+        <div class="main-content pure-u">
+
+            <div class="box-border-b pure-g">
+                <div class="content-box content-subtitle pure-u-1-12">Контакты</div>
+                <div class="content-box pure-u-11-12">
+                    <div class=" push-left">+7 123 456-78-98 <a href="#">asdf@adsf.ru</a>
+                    </div>
+                    <div class="user-select pure-menu pure-menu-horizontal push-right">
+                        <ul class="pure-menu-list">
+                            <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                                <a href="#" class="pure-menu-link">SERGEY PLESHKOV <i class="fa fa-angle-down fa-lg"></i></a>
+                                <ul class="pure-menu-children">
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Владимир Семёнович</a>
+                                    </li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Михаил Петрович</a>
+                                    </li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Иван Васильевич</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-border-b pure-g">
+                <div class="content-box content-subtitle pure-u-1-12">Выбрано</div>
+                <div class="content-box pre-filter-panel_toolbar pure-u-11-12">
+                    <a class="uppercase pull-right" href="#">Сбросить <i class="fa fa-times"></i></a>
+                    <div class="button-toolbar">
+                        <div class="button-group">
+                            <span class="button b_active pure-button">Англия <a href="#"><i class="fa fa-times"></i></a></span>
+                            <span class="button b_active pure-button">Лондон <a href="#"><i class="fa fa-times"></i></a></span>
+                            <a class="button pure-button"><i class="fa fa-bars"></i> Выбрать район</a>
+                            <a class="button pure-button">Указать улицу</a>
+                        </div>
+                        <a class="button b_active pure-button">Инвестиции <i class="fa fa-times"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pure-g">
+                <div class="content-box content-subtitle pure-u-1-12"><i class="fa-lg fa fa-angle-left"></i> назад</div>
+
+                <div class="content-box pure-u-11-12">
+                    <div class="pure-g">
+                        <div class="object-info pure-u-13-24">
+                            <h1 class="object-title">Квартиры в Лондоне</h1>
+                            <div class="object-content">
+                                <p class="content-subtitle no-m">Описание</p>
+                                <p>Общая площадь составляет 160 га и сочетает в себе жилые, общественно-деловые, торговые и социальные объекты, а так же разнообразные спортивно-оздоровительные и парковые зоны. Все это создает уникальное городское пространство, новую форму жизни, где передовые технологии тесно соседствуют с природой, а жилые и деловые объекты со спортом и отдыхом</p>
+                            </div>
+                            <div class="pure-g">
+                                <div class="object-price pure-u-1-2">
+                                    <p class="content-subtitle no-m">Цена</p>
+                                    <p class="medium"><span class="badge blue">$</span> 5 789 000</p>
+                                    <a class="button b_shadow pure-button">Рассчитать ипотеку</a>
+                                </div>
+
+                                <div class="object-price pure-u-1-2">
+                                    <p class="content-subtitle no-m">План</p>
+                                    <div class="object-scheme">
+                                        <a class="fancybox" href="img/placeholder/house-plan.jpg">
+                                            <div class="object-scheme_wrap"></div>
+                                            <i class="ico_w">&#107;</i>
+                                            <img src="img/placeholder/house-plan.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="object-slider m-t pure-u-1-1">
+                                    <div class="fotorama" data-nav="thumbs" data-arrows="true" data-click="false" data-swipe="false" >
+                                       <!-- если надо, чтобы слайд всплывал/увеличивался по клику, то делаем вот так  -->
+                                        <span class="fotorama__select"  data-thumb="img/placeholder/house-3.jpg">
+                                            <a class="fancybox" href="img/placeholder/house-3.jpg"><img src="img/placeholder/house-3.jpg"></a>
+                                        </span>
+                                        <!-- если нет, то можно просто выводить изображения -->
+                                        <img src="img/placeholder/house-1.jpg">
+                                        <img src="img/placeholder/house-2.jpg">
+                                        <img src="img/placeholder/house-3.jpg">
+                                    </div>
+                                </div>
+
+                                <div class="object-features pure-u-1-1">
+                                    <ul class="unstyled">
+                                        <li>
+                                            <span class="content-subtitle no-m">Кол-во комнат</span>
+                                            <br>
+                                            <p>6</p>
+                                        </li>
+                                        <li>
+                                            <span class="content-subtitle no-m">Мебель</span>
+                                            <br>
+                                            <p>Очень хорошая и новая мебель</p>
+                                        </li>
+                                        <li>
+                                            <span class="content-subtitle no-m">Площадь</span>
+                                            <br>
+                                            <p>200 м<sup>2</sup>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <span class="content-subtitle no-m">Здание</span>
+                                            <br>
+                                            <p>Частный дом</p>
+                                        </li>
+                                        <li>
+                                            <span class="content-subtitle no-m">Камин</span>
+                                            <br>
+                                            <p>Есть</p>
+                                        </li>
+                                        <li>
+                                            <span class="content-subtitle no-m">Интерьер</span>
+                                            <br>
+                                            <p>Современный и стильный</p>
+                                        </li>
+                                        <li>
+                                            <span class="content-subtitle no-m">Парковка</span>
+                                            <br>
+                                            <p>На две машины</p>
+                                        </li>
+                                        <li>
+                                            <span class="content-subtitle no-m">Оборудование</span>
+                                            <br>
+                                            <p>Стиральная машина, посудомоечная машина, пылесос, кондей</p>
+                                        </li>
+                                        <li>
+                                            <span class="content-subtitle no-m">Охрана</span>
+                                            <br>
+                                            <p>Злая собака</p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="object-tags pure-u-1-1">
+                                    <p class="content-subtitle no-m">Тэги</p>
+                                    <a href="" class="button pure-button">Частный дом</a>
+                                    <a href="" class="button pure-button">Рублёвка</a>
+                                    <a href="" class="button pure-button">Парковка</a>
+                                    <a href="" class="button pure-button">Охрана</a>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="pure-u-1-24"></div>
+
+                        <div class="pure-u-10-24">
+                            <div class="well">
+                                <p>Свяжитесь с нашим специалистом для консультации или просто оставьте номер телефона и мы вам перезвоним</p>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <img class="media-object" src="img/placeholder/manager.png">
+                                    </div>
+                                    <div class="media-body">
+                                        <p class="media-heading no-m medium caps">Александра Петрова</p>
+                                        <p class="small">Ведущий консультант</p>
+                                        <p class="medium t-blue">+7 495 123-45-67</p>
+                                    </div>
+                                </div>
+                                <div class="phone-form m-t">
+                                    <form class="form split-form_upright responsive-form" action="">
+                                        <input type="text" placeholder="Имя">
+                                        <input type="tel" class="phone-number" placeholder="+7 (___) ___-__-__">
+                                        <button class="action-submit pure-button">Оставить заявку на просмотр</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="object-recommended content-box m-t">
+                               <p class="content-subtitle text-elegant">Рекомендуем</p>
+                                <div class="media">
+                                    <div class="media-left media-middle">
+                                        <a href="#"><img class="media-object" src="img/placeholder/rec-1.png"></a>
+                                    </div>
+                                    <div class="media-body media-middle">
+                                        <p class="media-heading caps text-elegant">Жизнь и инвестиции в Лондоне</p>
+                                        <p>Я уеду туда, где большая вода, Может быть навсегда. Я уеду жить в Лондон!</p>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#"><img class="media-object" src="img/placeholder/rec-2.png"></a>
+                                    </div>
+                                    <div class="media-body media-middle">
+                                        <p class="media-heading caps text-elegant">Новостройки в Лондоне</p>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-left media-middle">
+                                        <a href="#"><img class="media-object" src="img/placeholder/rec-3.png"></a>
+                                    </div>
+                                    <div class="media-body media-middle">
+                                        <p class="media-heading caps text-elegant">Инвестиции в мире</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <div class="footer pure-u-24-24">
+                    <p class="align-center">&copy; Evans, 2014</p>
+                    <div class="footer-menu pure-menu pure-menu-horizontal align-center">
+                        <ul class="pure-menu-list">
+                            <li class="pure-menu-item"><a href="#" class="pure-menu-link">О компании</a>
+                            </li>
+                            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Партнёры</a>
+                            </li>
+                            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Карьера</a>
+                            </li>
+                            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Словарь</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div><!-- content-box -->
+        </div><!-- main-content -->
+
+        <script src="js/custom.js" type="text/javascript"></script>
+</body>
+
+</html>
