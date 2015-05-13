@@ -45,10 +45,10 @@
 
 <body>
 
-    <div class="layout filter-pane-open pure-g">
+    <div class="layout filter-open pure-g">
 
         <!-- MAIN MENU ------------------------------------------------------------->
-        <div class="main-menu pure-u">
+        <div class="sidebar-menu pure-u">
             <div class="nav-inner">
                 <div class="pure-menu align-center caps">
                     <div class="lang-select">
@@ -83,7 +83,7 @@
         </div>
 
         <!-- SEARCH PRE-FILTER PANEL ----------------------------------------------->
-        <div class="pre-filter-panel pure-u">
+        <div class="filter-panel pure-u">
 
             <h1 class="company">
                 <a href="#">Evans<sup>&trade;</sup></a>
@@ -167,7 +167,7 @@
 
             <div class="box-border-b pure-g">
                 <div class="content-box content-subtitle pure-u-1-12">Выбрано</div>
-                <div class="content-box pre-filter-panel_toolbar pure-u-11-12">
+                <div class="content-box filter-panel_toolbar pure-u-11-12">
                     <a class="uppercase pull-right" href="#">Сбросить <i class="fa fa-times"></i></a>
                     <div class="button-toolbar">
                         <div class="button-group">
@@ -216,7 +216,7 @@
                 <div class="full-filter-object_wrap pure-u-1-1 box-border-b">
                     <p class="align-center m-t m-b"><a href="#" onclick="facechange('#block'); return false">ЕЩЁ <i class="fa fa-angle-down fa-lg"></i></a>
                     </p>
-                    <div id="block" class="full-filter-object box-border-b">
+                    <div id="block" class="full-filter-object box-border-b" style="display:none">
                         <div class="pure-g">
                             <form class="filter-object-form" action="" method="post">
                                 <div class="content-box pure-u-1-12"></div>
@@ -286,7 +286,7 @@
 
             </div>
 
-            <div class="pure-g">
+            <div class="content-layout pure-g">
                 <div class="content-box content-subtitle pure-u-1-12">
                     <a href="#" class="button pure-button"><i class="fa fa-compress"></i></a>
                 </div>
@@ -297,7 +297,7 @@
                         <a class="button pure-button">На карте</a>
                     </div>
 
-                    <div class="boxname uppercase">Объекты по теме</div>
+                    <h3 class="content-title caps">Объекты по теме</h3>
 
                     <div class="clearfix"></div>
 

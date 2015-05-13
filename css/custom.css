@@ -14,7 +14,12 @@ body { font-size: 12px; color: #444; /background: url(../final-design/44.png) to
     TYPOGRAPHY
    ========================================================================== */
 
-p { margin: 0 0 .5em; line-height: 1.8em; }
+h1 { font-size: 1.8em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.2em; }
+h4 { font-size: 1em; font-weight: bold; }
+
+p { margin: 0 0 1em; line-height: 1.8em; }
 
 a { color: #1a8696;
     text-decoration: none;
@@ -78,18 +83,25 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 
 /* Content Styles */
 
-/* Move the layout over so we can fit the main-menu + filter in on the left */
 .layout { position: relative; }
-.layout.filter-pane-open { padding-left:335px; /* "left col (main-menu + filter)" width */ }
 
-/* These are position:fixed; elements that will be in the left 355px of the screen */
-.main-menu, .pre-filter-panel { position: fixed; top: 0; bottom: 0; overflow: auto; }
-.main-menu {
+/* сдвигаем общий слой вправо на ширину главного меню и префильтра */
+.layout.filter-open { padding-left:335px; /* ширина левой колонки = главное меню + префильтр  */ }
+
+/* зафиксировали блоки слева, будут видны всегда */
+.sidebar-menu,
+.filter-panel { position: fixed; top: 0; bottom: 0; overflow: auto; }
+
+/* ширина и положение левого меню */
+.filter-open .sidebar-menu {
     width:80px; height: 100%;
-    margin-left:-335px; /* left col width (main-menu + filter) */
+    margin-left:-335px; /* сдвинули влево до конца окна */
 }
+/* ширина и положение префильтра */
+.filter-open .filter-panel { width:255px; height: 100%; margin-left: -255px; /* сдвинули влево до конца окна МИНУС ширина меню */ }
 
-.pre-filter-panel { width:255px; height: 100%; margin-left: -255px; }
+/* ширина и положение контентной части */
+.main-content { position: static; width: 100%; margin: 0; padding: 0; }
 
 
 /* ==========================================================================
@@ -98,28 +110,28 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 
 /* _____ MAIN-MENU _____ */
 
-.main-menu { display: table; background: #004d57; }
-.main-menu .nav-inner { display: table-cell; vertical-align: middle; }
+.sidebar-menu { display: table; background: #004d57; }
+.sidebar-menu .nav-inner { display: table-cell; vertical-align: middle; }
 /* выбор языка */
 .lang-select { position: absolute; width: 100%; top: 0; text-align: center; }
 /* отступы между пунктами */
-.main-menu .pure-menu-link { padding: 1em 0;   font-weight: 400; }
+.sidebar-menu .pure-menu-link { padding: 1em 0;   font-weight: 400; }
 /* цвет пункта меню */
 .pure-menu-link { color: #24ACC0; }
 /* цвет активного пункта меню */
 .pure-menu-active .pure-menu-link { color: #eee; }
 /* убрали выделение пункта активного раздела */
-.main-menu .pure-menu-active>.pure-menu-link,
-.main-menu .pure-menu-active>.pure-menu-link:hover,
-.main-menu .pure-menu-active>.pure-menu-link:focus  { background-color: transparent; }
+.sidebar-menu .pure-menu-active>.pure-menu-link,
+.sidebar-menu .pure-menu-active>.pure-menu-link:hover,
+.sidebar-menu .pure-menu-active>.pure-menu-link:focus  { background-color: transparent; }
 /* подсветили при наведении */
-.main-menu .pure-menu-link:hover,
-.main-menu .pure-menu-link:focus { background-color: #115861; }
+.sidebar-menu .pure-menu-link:hover,
+.sidebar-menu .pure-menu-link:focus { background-color: #115861; }
 
 
 /* _____ PRE-FILTER-PANEL _____ */
 
-.pre-filter-panel { background: #00788a; text-align: center; }
+.filter-panel { background: #00788a; text-align: center; }
 
 .company > a { text-transform: uppercase; letter-spacing: .2em; font-weight: 300; color: #fff; }
 .company sup { top: -1em; font-size: .4em; }
@@ -127,16 +139,16 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 .filter-item_name { margin: 3em 0 .3em; font-family: 'Sreda'; font-size: .85em; letter-spacing: .1em; text-transform: uppercase; color: #00bbd6; }
 
 /* перекрасили текст в кнопках */
-.pre-filter-panel .button { color: #eee; }
+.filter-panel .button { color: #eee; }
 
 
 /* _____ MAIN CONTENT _____ */
 
-/* content-box */
-.main-content { position: static; width: 100%; margin: 0; padding: 0; }
+.content-layout { padding-top: 1.5em; }
+
 .content-box { padding: 10px 20px; }
+
 .box-border-b { border-bottom: 1px solid #24ACC0; }
-.boxname { font-family: 'Sreda'; font-weight: 600; letter-spacing: .1em; }
 
 .content-subtitle { margin-bottom: 0.3em; text-transform: uppercase; color: #999; }
 
@@ -146,7 +158,7 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 .pure-menu-horizontal .pure-menu-has-children>.pure-menu-link:after { content: none; }
 
 /* фильтры - выбор услуг */
-.pre-filter-panel_toolbar .button:hover { color: #eee; }
+.filter-panel_toolbar .button:hover { color: #eee; }
 
 .filter-object { padding-right: 3em; }
 .filter-object p { margin-bottom: 15px; height: 2em; }
@@ -174,11 +186,11 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 /*___ страница объекта ___*/
 .object-info {  }
 
-.object-title { margin: 0 0 1em; font-family: 'Sreda'; font-size: 1.7em; line-height: 1; font-weight: 500; }
-.object-title .object-articul { font-family: 'Avenir Next', sans-serif; font-size: .6em; }
+.content-title { margin: 0 0 1em; font-family: 'Sreda'; line-height: 1; font-weight: 500; }
+.content-title .object-articul { font-family: 'Avenir Next', sans-serif; font-size: .6em; }
 /* добавить в избранное */
-.object-title .add-favorites { color: #999; unicode-bidi: bidi-override; direction: rtl; }
-.object-title .add-favorites:hover { color: #FFCB00; }
+.content-title .add-favorites { color: #999; unicode-bidi: bidi-override; direction: rtl; }
+.content-title .add-favorites:hover { color: #FFCB00; }
 .add-favorites.active { color: #FFCB00 !important; }
 .add-favorites.active:before { position: absolute; font-family: FontAwesome; content: "\f005"; }
 /* описание объекта */
