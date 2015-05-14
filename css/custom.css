@@ -77,6 +77,9 @@ a:hover { color: #1CCBE5; }
 /* list */
 ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 
+/* костыль для иконки "назад" */
+.fa-angle-left.hack-top { position: relative; top: -1px; }
+
 /* ==========================================================================
     LAYOUT
    ========================================================================== */
@@ -150,7 +153,7 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 
 .box-border-b { border-bottom: 1px solid #24ACC0; }
 
-.content-subtitle { margin-bottom: 0.3em; text-transform: uppercase; color: #999; font-size: .9em; }
+.content-subtitle { margin-bottom: 0.3em; padding-right: 0px; text-transform: uppercase; color: #999; font-size: .9em; }
 
 .user-select { width: auto; margin-top: -7px; margin-right: -12px; }
 /* убрали иконку справа в выпадающем меню */
@@ -175,13 +178,12 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 
 /* object-list */
 .object-list { margin-top: 2em; }
-.object-list_item { margin-bottom: 4em;  }
+.object-list_item { margin-bottom: 3em;  }
 .object-list_item .object_wrap { margin-right: 1em; }
 .object-list_item img { max-width: 100%; }
 .object-list_item .obj-name { margin:1em 0 0; font-size: 1.1em; line-height: 1.3em; text-transform: uppercase; }
 .object-list_item .district { margin-bottom: 1em; font-size: .9em; color: #999; }
-.object-list_item .obj-description { height: 120px; overflow: hidden; }
-.object-list_item .obj-description:after { content: ''; position: absolute;  bottom: 20px; left: 0px; height: 50px; width: 100%; background: url(../img/template/cover-gradient.png) bottom repeat-x;  }
+.object-list_item .obj-description { height: 110px; overflow: hidden; }
 .object-list_item .item_prise { margin: 0; font-size: 1.1em; color: #1a5f68; }
 
 .object-info {  }
@@ -214,8 +216,9 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 
 
 /* Объекты по теме ВНИЗУ */
-
-.relevant-obgect-bottom { position: fixed; left: 335px; bottom: 0px; right: 0px; padding-top: 20px; background: #FFF; box-shadow: 0px 0px 30px #CCC; z-index: 99; }
+.relevant-obgect-bottom { position: fixed; left: 335px; bottom: 0px; right: 0px; min-width: 928px; padding-top: 20px; background: #FFF; box-shadow: 0px 0px 30px #CCC; z-index: 99; }
+.relevant-obgect-bottom .item_prise + .obj-description { height: 87px; }
+.relevant-obgect-bottom .btn-fullscreen { position: absolute; bottom: 20px; left: 20px; }
 
 
 /* _____ FOOTER _____ */
