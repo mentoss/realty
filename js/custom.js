@@ -21,18 +21,32 @@ $(".floorFilter").noUiSlider({
 $(".priseFilter, .floorFilter, .areaFilter").Link('lower').to('-inline-');
 $(".priseFilter, .floorFilter, .areaFilter").Link('upper').to('-inline-');
 
- // открыть/закрыть фильтр
+
+// показать\скрыть фильтр
+function filtershow(objName) {
+    if ($(objName).css('display') == 'block') {
+        $(objName).animate({opacity: 'hide'}, 200);
+    } else {
+        $(objName).animate({opacity: 'toggle'}, 200);
+    }
+};
+
+ // открыть/закрыть полный фильтр
 function facechange(objName) {
     if ($(objName).css('display') == 'none') {
         $(objName).animate({
             height: 'show'
         }, 400);
+        $('.relevant-obgect-bottom').animate({height:"+=79"});
     } else {
         $(objName).animate({
             height: 'hide'
         }, 200);
+        $('.relevant-obgect-bottom').animate({height:"-=79"});
     }
 };
+
+
 
  // стилизация элементов фильтра
 (function ($) {

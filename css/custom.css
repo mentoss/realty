@@ -169,7 +169,7 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 
 /* полный фильтр */
 .full-filter-object_wrap { position: relative; width: 100%; }
-.full-filter-object { position: absolute; top:46px; width: 100%; background: #fff; border-top: 1px solid #ccc; border-right: none; padding-bottom: 2em; z-index: 99; }
+.full-filter-object { position: absolute; top:45px; width: 100%; background: #fff; border-top: 1px solid #ccc; border-right: none; padding-bottom: 2em; z-index: 99; }
 .filter-object-form { width: 100%; }
 .filter-object-form .width-90 { width: 90%; }
 .filter-object-form label { font-size: .85em; }
@@ -216,9 +216,11 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 
 
 /* Объекты по теме ВНИЗУ */
-.relevant-obgect-bottom { position: fixed; left: 335px; bottom: 0px; right: 0px; min-width: 928px; padding-top: 20px; background: #FFF; box-shadow: 0px 0px 30px #CCC; z-index: 99; }
+.relevant-obgect-bottom { position: fixed; left: 335px; bottom: 0px; right: 0px; height: 450px; min-width: 928px; padding-top: 20px; background: #FFF; box-shadow: 0px 0px 30px #CCC; z-index: 99; }
 .relevant-obgect-bottom .item_prise + .obj-description { height: 87px; }
 .relevant-obgect-bottom .btn-fullscreen { position: absolute; bottom: 20px; left: 20px; }
+
+.filter-up { position: absolute; background: #FFF; z-index: 9; }
 
 
 /* _____ FOOTER _____ */
