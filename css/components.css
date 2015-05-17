@@ -92,7 +92,7 @@ p .button { padding: .3em .6em; }
 .media-body { width: 10000px; }
 .media-object { display: block; }
 .media-right,
-.media > .pull-right { padding-left: 10px; }
+.media > .push-right { padding-left: 10px; }
 .media-left,
 .media > .pull-left { padding-right: 10px; }
 .media-left,
@@ -116,7 +116,7 @@ p .button { padding: .3em .6em; }
 /* полный фильтр объектов */
 .filter-object-form label { line-height: 3em; }
 /* селект */
-.filter-object-form .jq-selectbox.jqselect { margin-bottom: 1em; }
+.filter-object-form .jq-selectbox.jqselect { margin-bottom: 1em; font-family: tahoma; }
 .filter-object-form .jq-selectbox__select { border: 1px solid #24ACC0; background: none; box-shadow: none; line-height: 30px; font-family: inherit; }
 .filter-object-form .jq-selectbox__select:hover { background-color: #fff; }
 .filter-object-form .jq-selectbox__select .jq-selectbox__trigger { border-left: none; }

@@ -130,7 +130,7 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 /* подсветили при наведении */
 .sidebar-menu .pure-menu-link:hover,
 .sidebar-menu .pure-menu-link:focus { background-color: #115861; }
-
+.sidebar-menu .pure-menu-link [class^="icon-"] { vertical-align: 0%; }
 
 /* _____ PRE-FILTER-PANEL _____ */
 
@@ -186,15 +186,12 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 .object-list_item .obj-description { height: 110px; overflow: hidden; }
 .object-list_item .item_prise { margin: 0; font-size: 1.1em; color: #1a5f68; }
 
-.object-info {  }
-
 .content-title { margin: 0 0 1em; font-family: 'Sreda'; line-height: 1; font-weight: 500; }
 .content-title .object-articul { font-family: 'Avenir Next', sans-serif; font-size: .6em; }
 /* добавить в избранное */
-.content-title .add-favorites { color: #999; unicode-bidi: bidi-override; direction: rtl; }
-.content-title .add-favorites:hover { color: #FFCB00; }
-.add-favorites.active { color: #FFCB00 !important; }
-.add-favorites.active:before { position: absolute; font-family: FontAwesome; content: "\f005"; }
+.content-title .add-bookmark { position: relative; top: 8px; color: #999; }
+.content-title .add-bookmark:hover { color: #FFCB00; }
+.add-bookmark.active { color: #FFCB00 !important; }
 /* описание объекта */
 .object-content { margin-bottom: 1.5em; }
 /* цена */
@@ -202,7 +199,7 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 /* схема объекта - картинка */
 .object-scheme { position: relative;  }
 .object-scheme_wrap { width: 101px; position: absolute; background: rgba(0, 0, 0, 0.3); top: 0px; bottom: 0px; }
-.object-scheme .ico_w { position: absolute; top: 30%; left: 35px; color: #999; font-size: 3em; color: #eee; }
+.object-scheme [class^="icon-"] { position: absolute; top: 30%; left: 35px; color: #999; font-size: 3em; color: #eee; }
 .object-scheme img { max-width: 100px; border: 1px solid #eee; }
 /* подробная информация об объекте */
 .object-features { margin-top: 2em; }
