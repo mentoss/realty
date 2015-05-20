@@ -29,6 +29,34 @@ a { color: #1a8696;
 }
 a:hover { color: #1CCBE5; }
 
+/* ==========================================================================
+    HELPER
+   ========================================================================== */
+
+/* float */
+.push-left { float: left; }
+.push-center { float: none; margin: 0 auto; }
+.push-right { float: right; }
+.clearfix { clear: both; }
+
+/* margin */
+.no-m { margin: 0px; }
+.m-t { margin-top: 1em; }
+.m-r { margin-right: 1em; }
+.m-b { margin-bottom: 1em; }
+.m-l { margin-left: 1em; }
+
+/* padding */
+.no-p { padding: 0px; }
+.p-t { padding-top: 1em; }
+.p-r { padding-right: 1em; }
+.p-b { padding-bottom: 1em; }
+.p-l { padding-left: 1em; }
+
+/* unstyled list */
+ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
+
+
 /* align text */
 .align-left { text-align: left; }
 .align-center { text-align: center; }
@@ -47,39 +75,6 @@ a:hover { color: #1CCBE5; }
 
 .text-elegant { font-family: 'Sreda'; letter-spacing: .1em; }
 
-
-/* ==========================================================================
-    HELPER
-   ========================================================================== */
-
-/* float */
-.push-left { float: left; }
-.push-center { float: none; margin: 0 auto; }
-.push-right { float: right; }
-.clearfix { clear: both; }
-
-/* margin */
-.no-m { margin: 0px; }
-.m-t { margin-top: 1em; }
-.m-r { margin-right: 1em; }
-.m-b { margin-bottom: 1em; }
-.m-l { margin-left: 1em; }
-
-
-
-/* padding */
-.no-p { padding: 0px; }
-.p-t { padding-top: 1em; }
-.p-r { padding-right: 1em; }
-.p-b { padding-bottom: 1em; }
-.p-l { padding-left: 1em; }
-
-/* list */
-ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
-
-/* костыль для иконки "назад" */
-.fa-angle-left.hack-top { position: relative; top: -1px; }
-
 /* ==========================================================================
     LAYOUT
    ========================================================================== */
@@ -91,17 +86,21 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 /* сдвигаем общий слой вправо на ширину главного меню и префильтра */
 .layout.filter-open { padding-left:335px; /* ширина левой колонки = главное меню + префильтр  */ }
 
+/* сдвигаем общий слой вправо на ширину главного меню без префильтра */
+.layout.filter-close { padding-left:80px; /* ширина левой колонки = главное меню */ }
+
 /* зафиксировали блоки слева, будут видны всегда */
 .sidebar-menu,
 .filter-panel { position: fixed; top: 0; bottom: 0; overflow: auto; z-index: 999; }
 
 /* ширина и положение левого меню */
-.filter-open .sidebar-menu {
-    width:80px; height: 100%;
-    margin-left:-335px; /* сдвинули влево до конца окна */
-}
+.sidebar-menu { width:80px; height: 100%; margin-left:-335px; /* сдвинули влево до конца окна */ }
+
+/* ширина и положение левого меню без префильтра */
+.filter-close .sidebar-menu { margin-left:-80px; /* сдвинули влево до конца окна */ }
+
 /* ширина и положение префильтра */
-.filter-open .filter-panel { width:255px; height: 100%; margin-left: -255px; /* сдвинули влево до конца окна МИНУС ширина меню */ }
+.filter-panel { width:255px; height: 100%; margin-left: -255px; /* сдвинули влево до конца окна МИНУС ширина меню */ }
 
 /* ширина и положение контентной части */
 .main-content { position: static; width: 100%; margin: 0; padding: 0; }
@@ -132,6 +131,8 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 .sidebar-menu .pure-menu-link:focus { background-color: #115861; }
 .sidebar-menu .pure-menu-link [class^="icon-"] { vertical-align: 0%; }
 
+
+
 /* _____ PRE-FILTER-PANEL _____ */
 
 .filter-panel { background: #00788a; text-align: center; }
@@ -145,6 +146,7 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 .filter-panel .button { color: #eee; }
 
 
+
 /* _____ MAIN CONTENT _____ */
 
 .content-layout { padding-top: 1.5em; }
@@ -154,6 +156,13 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 .box-border-b { border-bottom: 1px solid #24ACC0; }
 
 .content-subtitle { margin-bottom: 0.3em; padding-right: 0px; text-transform: uppercase; color: #999; font-size: .9em; }
+
+/* главная страница */
+.prefilter-min { background: #00788a; padding: 4px 20px; text-align: center; }
+.prefilter-min a { color: #fff; margin-top: 5px; }
+
+
+
 
 /* выбор юзера */
 .user-select { width: auto; margin-top: -7px; margin-right: -12px; }
@@ -220,6 +229,7 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 .relevant-obgect-bottom .btn-fullscreen { position: absolute; bottom: 20px; left: 20px; }
 
 .filter-up { position: absolute; background: #FFF; z-index: 9; }
+
 
 
 /* _____ FOOTER _____ */
