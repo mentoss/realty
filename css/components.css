@@ -52,6 +52,7 @@ p .button { padding: .3em .6em; }
 .button-small { font-size: .85em; }
 .button-large { font-size: 1.1em; }
 .button-xlarge { font-size: 1.25em; }
+.button-spase { padding: .5em 2em; font-size: 1em; }
 
 
 
