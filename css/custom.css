@@ -59,7 +59,7 @@ a:hover { color: #1CCBE5; }
 ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 
 /* image */
-.img-100 { min-width: 100%; }
+.pure-img { width: 100%; }
 
 /* align text */
 .align-left { text-align: left; }
