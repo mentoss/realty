@@ -158,12 +158,14 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 
 .content-layout { padding-top: 1.5em; }
 
-.content-box { padding: 10px 20px 10px 15px; }
+.holder { padding-left: 100px; }
+
+.space-box { padding: 10px 20px 10px 15px; }
+.box-up { margin-top: -28px; }
 
 .box-border-b { border-bottom: 1px solid #24ACC0; }
 
-.depiction { position: absolute;  }
-.depiction + div { margin-left: 100px; }
+.depiction { height: 100%; margin-left: -100px; }
 
 .depiction,
 .content-subtitle { text-transform: uppercase; color: #999; font-size: .9em; }
@@ -173,24 +175,17 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 .prefilter-min a { color: #fff; margin-top: 5px; }
 .search-btn { margin: 0px 40px 0px 0px; }
 
+/* блоки на главной */
 .section-box { position: relative; }
 .section-title { position: absolute; width: auto; top: 0px; padding: 40px; font-size: 2.5em; font-weight: bold; text-transform: uppercase; color: #fff; }
 .section-tag { position: absolute; bottom: 0; width: auto; padding: 30px; }
-
+/* футер на главной */
 .index-footer { padding: 10px 0px; }
 .index-footer .footer-menu ul { border-top: none; }
 
 
-
-
-.index-section [class ^="section_"]  { height: 50%; background-size:cover;  }
-.section_residential { background: url(../img/placeholder/index1.jpg) no-repeat; }
-/* липкий футер на главной */
-
-
-
 /* выбор юзера */
-.user-select { width: auto; }
+.user-select { width: auto; margin-top: 5px; margin-right: 20px; }
 .user-select .pure-menu-list { margin-right: -10px; }
 /* убрали иконку справа в выпадающем меню */
 .pure-menu-has-children>.pure-menu-link:after,
