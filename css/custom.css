@@ -161,12 +161,18 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 
 .content-subtitle { margin-bottom: 0.3em; padding-right: 0px; text-transform: uppercase; color: #999; font-size: .9em; }
 
-/* главная страница */
+/* ГЛАВНАЯ СТРАНИЦА */
 .index-page { }
 .prefilter-min { background: #00788a; padding: 4px 20px; text-align: center; }
 .prefilter-min a { color: #fff; margin-top: 5px; }
 .search-btn { margin-top: -5px; margin-right: 40px; }
-
+/* блоки на главной */
+.section-box { position: relative; }
+.section-title { position: absolute; width: auto; top: 0px; padding: 40px; font-size: 2.5em; font-weight: bold; text-transform: uppercase; color: #fff; }
+.section-tag { position: absolute; bottom: 0; width: auto; padding: 30px; }
+/* футер на главной */
+.index-footer { padding: 10px 0px; }
+.index-footer .footer-menu ul { border-top: none; }
 
 
 /* выбор юзера */
@@ -239,6 +245,8 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 
 /* _____ FOOTER _____ */
 .footer { height: 120px; margin-top: 50px; color: #999; }
+.footer-index { height: auto; margin-top: 0px; padding: 10px 0;}
+.footer-index .footer-menu ul { border-top: none; }
 .footer-menu { font-family: 'Sreda'; font-size: 1.2em; }
 .footer-menu ul { border-top: 1px solid #eee; }
 .footer-menu a {   padding: .5em 2em; color: #999; }
