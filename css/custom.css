@@ -225,7 +225,7 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 .object-scheme img { max-width: 100px; border: 1px solid #eee; }
 /* подробная информация об объекте */
 .object-features { margin-top: 2em; }
-.object-features li { display: inline-block; width: 49.5%; margin-bottom: 1em; letter-spacing: normal;}
+.object-features li { display: inline-block; width: 49.5%; margin-bottom: 1em; vertical-align: top; letter-spacing: normal; }
 
 /* оставьте телефон */
 .phone-form { text-align: center; }
