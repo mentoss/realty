@@ -1,120 +1,27 @@
 @font-face {
-  font-family: 'Avenir Next';
-  font-style: normal;
-  font-weight: 100;
-  src: local('Avenir Next Cyr Ultra Light'),
-       url(../fonts/AvenirNextCyr/UltraLight.otf);
+	font-family: 'AvenirNext';
+	src: url('../fonts/AvenirNext/reg/AvenirNext-Regular.eot');
+	src: url('../fonts/AvenirNext/reg/AvenirNext-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/AvenirNext/reg/AvenirNext-Regular.woff') format('woff'),
+		url('../fonts/AvenirNext/reg/AvenirNext-Regular.ttf')  format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
 @font-face {
-  font-family: 'Avenir Next';
-  font-style: italic;
-  font-weight: 100;
-  src: local('Avenir Next Cyr Ultra Light Italic'),
-       url(../fonts/AvenirNextCyr/UltraLightIt.otf);
-}
-
-
-@font-face {
-  font-family: 'Avenir Next Thin';
-  font-style: normal;
-  font-weight: 200;
-  src: local('Avenir Next Cyr Thin'),
-       url(../fonts/AvenirNextCyr/Thin.otf);
+	font-family: 'AvenirNext';
+	src: url('../fonts/AvenirNext/med/AvenirNext-Medium.eot');
+	src: url('../fonts/AvenirNext/med/AvenirNext-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/AvenirNext/med/AvenirNext-Medium.woff') format('woff'),
+		url('../fonts/AvenirNext/med/AvenirNext-Medium.ttf')  format('truetype');
+	font-weight: 500;
+	font-style: normal;
 }
 @font-face {
-  font-family: 'Avenir Next';
-  font-style: italic;
-  font-weight: 200;
-  src: local('Avenir Next Cyr Thin Italic'),
-       url(../fonts/AvenirNextCyr/ThinItalic.otf);
-}
-
-@font-face {
-  font-family: 'Avenir Next';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Avenir Next Cyr Light'),
-       url(../fonts/AvenirNextCyr/Light.otf);
-}
-@font-face {
-  font-family: 'Avenir Next';
-  font-style: italic;
-  font-weight: 300;
-  src: local('Avenir Next Cyr Light Italic'),
-       url(../fonts/AvenirNextCyr/LightItalic.otf);
-}
-
-@font-face {
-  font-family: 'Avenir Next';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Avenir Next Cyr Regular'),
-       url(../fonts/AvenirNextCyr/Regular.otf);
-}
-@font-face {
-  font-family: 'Avenir Next';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Avenir Next Cyr Regular Italic'),
-       url(../fonts/AvenirNextCyr/RegularItalic.otf);
-}
-
-@font-face {
-  font-family: 'Avenir Next';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Avenir Next Cyr Medium'),
-       url(../fonts/AvenirNextCyr/Medium.otf);
-}
-@font-face {
-  font-family: 'Avenir Next';
-  font-style: italic;
-  font-weight: 500;
-  src: local('Avenir Next Cyr Medium Italic'),
-       url(../fonts/AvenirNextCyr/MediumItalic.otf);
-}
-
-@font-face {
-  font-family: 'Avenir Next';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Avenir Next Cyr Demi'),
-       url(../fonts/AvenirNextCyr/Demi.otf);
-}
-@font-face {
-  font-family: 'Avenir Next';
-  font-style: italic;
-  font-weight: 600;
-  src: local('Avenir Next Cyr Demi Italic'),
-       url(../fonts/AvenirNextCyr/DemiItalic.otf);
-}
-
-@font-face {
-  font-family: 'Avenir Next';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Avenir Next Cyr Bold'),
-       url(../fonts/AvenirNextCyr/Bold.otf);
-}
-@font-face {
-  font-family: 'Avenir Next';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Avenir Next Cyr Bold Italic'),
-       url(../fonts/AvenirNextCyr/BoldItalic.otf);
-}
-
-@font-face {
-  font-family: 'Avenir Next';
-  font-style: normal;
-  font-weight: 800;
-  src: local('Avenir Next Cyr Heavy'),
-       url(../fonts/AvenirNextCyr/Heavy.otf);
-}
-@font-face {
-  font-family: 'Avenir Next';
-  font-style: italic;
-  font-weight: 800;
-  src: local('Avenir Next Cyr Heavy Italic'),
-       url(../fonts/AvenirNextCyr/HeavyItalic.otf);
+	font-family: 'Copperplate';
+	src: url('../fonts/copperplate/Copperplate.eot');
+	src: url('../fonts/copperplate/Copperplate.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/copperplate/Copperplate.woff') format('woff'),
+		url('../fonts/copperplate/Copperplate.ttf')  format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }

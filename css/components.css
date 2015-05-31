@@ -1,6 +1,6 @@
 /* _____ BUTTON _____ */
 
-.button { margin: 3px 1px; background: transparent; border: 1px solid #24ACC0; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; border-radius: 5px; font-size: .85em ; font-weight: 600; }
+.button { margin: 3px 1px; background: transparent; border: 1px solid #24ACC0; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; border-radius: 5px; font-size: .85em ; font-weight: 500; }
 p .button { padding: .3em .6em; }
 .button:hover,
 .button:focus { background: #2f8f9d;  border: 1px solid #2f8f9d; color: #eee; }
@@ -102,7 +102,7 @@ p .button { padding: .3em .6em; }
 .media-body { display: table-cell; vertical-align: top; }
 .media-middle { vertical-align: middle; }
 .media-bottom { vertical-align: bottom; }
-.media-heading { margin-top: 0; margin-bottom: 5px; line-height: 1; }
+.media-heading { margin-top: 0; margin-bottom: 5px; line-height: 1; font-size: 13pt; }
 .media-list { padding-left: 0; list-style: none; }
 
 
@@ -143,4 +143,4 @@ p .button { padding: .3em .6em; }
 .fotorama__arr.fotorama__arr--next:hover:after { background-position: -50px -48px; }
 .fotorama__arr.fotorama__arr--prev:after { background-position: 0 0; }
 .fotorama__arr.fotorama__arr--prev:hover:after { background-position: 0 -48px; }
-
+.fotorama__nav { text-align: left !important; }

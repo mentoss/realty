@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+
+    <title>Аренда: городское жильё</title>
+
+    <!-- LAYOUT ------------------------->
+    <link rel="stylesheet" href="css/core/normalize/base-min.css">
+    <link rel="stylesheet" href="css/core/normalize/base-context-min.css">
+    <link rel="stylesheet" href="css/core/pure-nr-min.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- COMPONENTS --------------------->
+    <!-- jQuery-->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <!-- icon-fonts -->
+
+    <link rel="stylesheet" href="fonts/Linearicons/linearicons.css">
+    <script type="text/javascript" src="fonts/Linearicons/liga.js"></script>
+    <!-- The noUiSlider script and stylesheet -->
+    <link href="js/noUiSlider/jquery.nouislider.min.css" rel="stylesheet">
+    <link href="js/noUiSlider/nouislider.custom.css" rel="stylesheet">
+    <script type="text/javascript" src="js/noUiSlider/jquery.nouislider.all.min.js"></script>
+    <!-- jQueryFormStyler -->
+    <link href="js/jQueryFormStyler/jquery.formstyler.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jQueryFormStyler/jquery.formstyler.min.js"></script>
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <!-- fotorama.css & fotorama.js. -->
+    <link href="js/fotorama/fotorama.css" rel="stylesheet">
+    <script type="text/javascript" src="js/fotorama/fotorama.js"></script>
+    <!-- maskedinput -->
+    <script src="js/jquery.maskedinput.min.js" type="text/javascript"></script>
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/ie8.css">
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div class="layout filter-open pure-g">
+
+        <!-- MAIN MENU ------------------------------------------------------------->
+        <div class="sidebar-menu pure-u">
+            <div class="nav-inner">
+                <div class="pure-menu align-center caps">
+                    <div class="lang-select">
+                        <a href="" class="caps">
+                            <img src="img/flag_ru.png" alt="">
+                            <br>Русский
+                        </a>
+                    </div>
+                    <ul class="pure-menu-list align-center">
+                        <li class="pure-menu-item pure-menu-active">
+                            <a href="#" class="pure-menu-link">
+                                <span class="icon-home3 li-3x"></span>
+                                <br>Главная
+                            </a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="#" class="pure-menu-link">
+                                <span class="icon-magnifier li-3x"></span>
+                                <br>Поиск
+                                <br>объектов
+                            </a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="#" class="pure-menu-link">
+                                <span class="icon-clipboard li-3x"></span>
+                                <br>Услуги
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- SEARCH PRE-FILTER PANEL ----------------------------------------------->
+        <div class="filter-panel pure-u">
+
+            <h1 class="company">
+                <a href="#">Evans<sup>&trade;</sup></a>
+            </h1>
+
+            <div class="pre-filter-item">
+                <div class="filter-item_name">Cтраны</div>
+
+                <div class="filter-item_select">
+                    <a class="button b_active btn-on-bg pure-button">Англия</a>
+                    <a class="button btn-on-bg pure-button">США</a>
+                    <a class="button btn-on-bg pure-button">Германия</a>
+                    <br>
+                    <a class="button btn-on-bg pure-button"><span class="icon-options"></span> Выбрать из списка</a>
+                </div>
+            </div>
+
+            <div class="pre-filter-item">
+                <div class="filter-item_name">Города</div>
+
+                <div class="pre-filter-item_select">
+                    <a class="button b_active btn-on-bg pure-button">Англия</a>
+                    <a class="button btn-on-bg pure-button">США</a>
+                    <a class="button btn-on-bg pure-button">Германия</a>
+                    <br>
+                    <a class="button btn-on-bg pure-button"><span class="icon-options"></span> Выбрать из списка</a>
+                </div>
+            </div>
+
+            <div class="pre-filter-item">
+                <div class="filter-item_name">Услуги</div>
+
+                <div class="filter-item_select">
+                    <a class="button btn-on-bg pure-button">Англия</a>
+                    <a class="button b_active btn-on-bg pure-button">США</a>
+                    <a class="button btn-on-bg pure-button">Германия</a>
+                    <br>
+                    <a class="button btn-on-bg pure-button"><span class="icon-options"></span> Выбрать из списка</a>
+                </div>
+            </div>
+
+            <div class="pre-filter-item">
+                <div class="filter-item_name">Тип недвижимости</div>
+
+                <div class="filter-item_select">
+                    <a class="button btn-on-bg pure-button">Англия</a>
+                    <a class="button btn-on-bg pure-button">США</a>
+                    <a class="button btn-on-bg pure-button">Германия</a>
+                    <br>
+                    <a class="button btn-on-bg pure-button"><span class="icon-options"></span> Выбрать из списка</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- MAIN CONTENT ---------------------------------------------------------->
+        <div class="main-content pure-u">
+
+            <div class="box-border-b pure-g">
+                <div class="content-box content-subtitle pure-u-1-12">Контакты</div>
+                <div class="content-box pure-u-11-12">
+                    <div class=" push-left">+7 123 456-78-98 <a href="#">asdf@adsf.ru</a>
+                    </div>
+                    <div class="user-select pure-menu pure-menu-horizontal push-right">
+                        <ul class="pure-menu-list">
+                            <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                                <a href="#" class="pure-menu-link">SERGEY PLESHKOV <span class="icon-chevron-down"></span></a>
+                                <ul class="pure-menu-children">
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Владимир Семёнович</a>
+                                    </li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Михаил Петрович</a>
+                                    </li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Иван Васильевич</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-border-b pure-g">
+                <div class="content-box content-subtitle pure-u-1-12">Выбрано</div>
+                <div class="content-box filter-panel_toolbar pure-u-11-12">
+                    <a class="caps push-right" href="#">Сбросить <span class="icon-cross li-sm"></span></a>
+                    <div class="button-toolbar">
+                        <div class="button-group">
+                            <span class="button b_active pure-button">Англия <a href="#"><span class="icon-cross li-sm"></span></a></span>
+                            <span class="button b_active pure-button">Лондон <a href="#"><span class="icon-cross li-sm"></span></a></span>
+                            <a class="button pure-button"><span class="icon-options"></span> Выбрать район</a>
+                            <a class="button pure-button">Указать улицу</a>
+                        </div>
+                        <a class="button b_active pure-button">Инвестиции <span class="icon-cross li-sm"></span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pure-g">
+                <div class="content-box content-subtitle pure-u-1-12">Фильтры</div>
+                <div class="content-box pure-u-11-12">
+                    <div class="pure-g">
+                        <div class="filter-object pure-u-1-4">
+                            <p class="small">Цена <a class="button b_active pure-button">$</a>
+                            </p>
+                            <div class="priseFilter"></div>
+                        </div>
+                        <div class="filter-object pure-u-1-4">
+                            <p class="small">Этаж</p>
+                            <div class="floorFilter"></div>
+                        </div>
+                        <div class="filter-object pure-u-1-4">
+                            <p class="small">Площадь <a class="button b_active pure-button">м<sup>2</sup></a>
+                            </p>
+                            <div class="areaFilter"></div>
+                        </div>
+                        <div class="filter-object pure-u-1-4">
+                            <p class="small">Кол-во комнат</p>
+                            <div class="button-toolbar appart">
+                                <div class="button-group">
+                                    <a class="button b_active pure-button">1</a>
+                                    <a class="button pure-button">2</a>
+                                    <a class="button pure-button">3</a>
+                                    <a class="button pure-button">4+</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="full-filter-object_wrap pure-u-1-1 box-border-b">
+                    <p class="align-center m-t m-b">
+                        <a href="#" onclick="facechange('#block'); return false">ЕЩЁ <span class="icon-chevron-down"></span></a>
+                    </p>
+                    <div id="block" class="full-filter-object box-border-b" style="display:none">
+                        <div class="pure-g">
+                            <form class="filter-object-form" action="" method="post">
+                                <div class="content-box pure-u-1-12"></div>
+
+                                <div class=" content-box pure-u-17-24">
+                                    <p class="content-subtitle">Удобства</p>
+                                    <div class="pure-g">
+                                        <div class="pure-u-1-2">
+                                            <p>ВНУТРИ</p>
+                                            <select class="width-90">
+                                                <option>Любой ремонт</option>
+                                                <option>Пункт 1</option>
+                                                <option>Пункт 2</option>
+                                                <option>Какой-то пункт с очень длинным текстом</option>
+                                                <option>Пункт 4</option>
+                                                <option>Пункт 5</option>
+                                            </select>
+                                            <br>
+                                            <label class="pure-u-1-2">
+                                                <input type="checkbox" /> С мебелью</label>
+                                            <label class="pure-u-1-2">
+                                                <input type="checkbox" /> С мебелью и стульями</label>
+                                            <label class="pure-u-1-2">
+                                                <input type="checkbox" /> С охраной</label>
+                                            <label class="pure-u-1-2">
+                                                <input type="checkbox" /> С цветами</label>
+                                            <label class="pure-u-1-2">
+                                                <input type="checkbox" /> Балкон</label>
+                                            <label class="pure-u-1-2">
+                                                <input type="checkbox" /> С роботом охранником</label>
+                                            <label class="pure-u-1-2">
+                                                <input type="checkbox" /> С сауной</label>
+                                            <label class="pure-u-1-2">
+                                                <input type="checkbox" /> С трудом</label>
+                                            <label class="pure-u-1-2">
+                                                <input type="checkbox" /> С блэк-джеком и ...</label>
+                                            <label class="pure-u-1-2">
+                                                <input type="checkbox" /> С фантазией</label>
+                                            <label class="pure-u-1-2">
+                                                <input type="checkbox" /> С мебелью и без</label>
+                                            <label class="pure-u-1-2">
+                                                <input type="checkbox" /> Парковкой</label>
+                                            <label class="pure-u-1-2">
+                                                <input type="checkbox" /> С радостью</label>
+                                            <label class="pure-u-1-2">
+                                                <input type="checkbox" /> С мебелью и столом</label>
+                                            <label class="pure-u-1-2">
+                                                <input type="checkbox" /> С фантазией</label>
+                                            <label class="pure-u-1-2">
+                                                <input type="checkbox" /> Фонтаном</label>
+                                            <label class="pure-u-1-2">
+                                                <input type="checkbox" /> С мебелью и стульями</label>
+                                            <label class="pure-u-1-2">
+                                                <input type="checkbox" /> С мебелью</label>
+                                        </div>
+
+                                        <div class="pure-u-1-2">
+                                            <p>РАСПОЛОЖЕНИЕ</p>
+                                            <label class="pure-u-1-2">
+                                                <input type="checkbox" /> В центре</label>
+                                            <label class="pure-u-1-2">
+                                                <input type="checkbox" /> В центре</label>
+                                            <label class="pure-u-1-2">
+                                                <input type="checkbox" /> Окраина</label>
+                                            <label class="pure-u-1-2">
+                                                <input type="checkbox" /> Окраина</label>
+                                            <label class="pure-u-1-2">
+                                                <input type="checkbox" /> В центре</label>
+                                            <label class="pure-u-1-2">
+                                                <input type="checkbox" /> Окраина</label>
+                                            <label class="pure-u-1-2">
+                                                <input type="checkbox" /> Окраина</label>
+                                            <label class="pure-u-1-2">
+                                                <input type="checkbox" /> Окраина</label>
+                                            <label class="pure-u-1-2">
+                                                <input type="checkbox" /> В центре</label>
+                                            <label class="pure-u-1-2">
+                                                <input type="checkbox" /> Окраина</label>
+                                            <label class="pure-u-1-2">
+                                                <input type="checkbox" /> В центре</label>
+                                            <label class="pure-u-1-2">
+                                                <input type="checkbox" /> В центре</label>
+                                            <label class="pure-u-1-2">
+                                                <input type="checkbox" /> В центре</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="content-box pure-u-5-24">
+                                    <p class="content-subtitle">Дополнительно</p>
+                                    <label>
+                                        <input type="checkbox" /> В центре</label>
+                                    <br>
+                                    <label>
+                                        <input type="checkbox" /> Окраина</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="content-layout pure-g">
+                <div class="content-subtitle content-box pure-u-1-12"><a href="#"><span class="icon-chevron-left"></span> назад</a></div>
+
+                <div class="content-box pure-u-11-12">
+                    <div class="pure-g">
+                        <div class="object-info pure-u-13-24">
+                            <h1 class="content-title">
+                                <span class="object-articul">ID: 60523</span><br>
+                                Барвиха, 7 км., Рублево-Успенское шоссе <a class="add-bookmark" href="#"><span class="icon-bookmark2 li-lg"></span></a>
+                            </h1>
+                            <div class="object-content">
+                                <p class="content-subtitle no-m">Описание</p>
+                                <p>6 комнат. Общая площадь 1500 кв.м. Гостиная 120 кв.м. 5 санузлов. Подсобные помещения, Гардеробная комната.</p>
+                            </div>
+                            <div class="pure-g">
+                                <div class="object-price pure-u-1-4">
+                                    <p class="content-subtitle no-m">Цена</p>
+                                    <p class="medium"><span class="badge blue">$</span> 25, 000, 000</p>
+                                    <a class="button b_shadow pure-button">Рассчитать ипотеку</a>
+                                </div>
+                                <div class="object-price pure-u-1-4"></div>
+                            </div>
+                            <div class="pure-g">
+                                <div class="object-slider m-t pure-u-1-1">
+                                    <div class="fotorama" data-nav="thumbs" data-arrows="true" data-click="false" data-swipe="false" >
+                                       <!-- если надо, чтобы слайд всплывал/увеличивался по клику, то делаем вот так  -->
+                                        <span class="fotorama__select"  data-thumb="http://www.evans.ru/image/i60523/i60523_01.jpg">
+                                            <a class="fancybox" href="http://www.evans.ru/image/i60523/i60523_01.jpg"><img class="pure-img" src="http://www.evans.ru/image/i60523/i60523_01.jpg"></a>
+                                        </span>
+                                        <!-- если нет, то можно просто выводить изображения -->
+                                        <img src="http://www.evans.ru/image/i60523/i60523_03.jpg">
+                                        <img src="http://www.evans.ru/image/i60523/i60523_05.jpg">
+                                        <img src="http://www.evans.ru/image/i60523/i60523_02.jpg">
+                                        <img src="http://www.evans.ru/image/i60523/i60523_04.jpg">
+                                        <img src="http://www.evans.ru/image/i60523/i60523_06.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pure-g">
+                                <div class="object-features pure-u-1-1">
+                                    <ul class="unstyled">
+                                        <li>
+                                            <span class="content-subtitle no-m">Интерьер:</span>
+                                            <br>
+                                            <p>Высококачественный ремонт, 2007. Высококачественная сантехника. Новый паркет. Сауна, Джакузи, Камин.</p>
+                                        </li>
+                                        <li>
+                                            <span class="content-subtitle no-m">Когда предлагается:</span>
+                                            <br>
+                                            <p>В настоящее время</p>
+                                        </li>
+                                        <li>
+                                            <span class="content-subtitle no-m">Мебель:</span>
+                                            <br>
+                                            <p>Современная, Полностью меблирована</p>
+                                        </li>
+                                       <li>
+                                            <span class="content-subtitle no-m">Оборудование:</span>
+                                            <br>
+                                            <p>Стиральная машина, Посудомоечная машина, Кондиционер, Кабельное Телевидение, Интерне</p>
+                                        </li>
+                                       <li>
+                                            <span class="content-subtitle no-m">Здание:</span>
+                                            <br>
+                                            <p>2-х этажный коттедж</p>
+                                        </li>
+                                        <li>
+                                            <span class="content-subtitle no-m">Подъезд:</span>
+                                            <br>
+                                            <p>Видеонаблюдение, Охрана</p>
+                                        </li>
+                                        <li>
+                                            <span class="content-subtitle no-m">Парковка:</span>
+                                            <br>
+                                            <p>Подземная парковка</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="pure-g">
+                                <div class="object-tags pure-u-1-1">
+                                    <p class="content-subtitle no-m">Тэги</p>
+                                    <a href="" class="button pure-button">Частный дом</a>
+                                    <a href="" class="button pure-button">Рублёвка</a>
+                                    <a href="" class="button pure-button">Парковка</a>
+                                    <a href="" class="button pure-button">Охрана</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="pure-u-1-24"></div>
+
+                        <div class="pure-u-10-24">
+                            <div class="well">
+                                <p>Чтобы назначить просмотр свяжитесь с:</p>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <img class="media-object" src="http://www.evans.ru/j/people_s-16.jpg">
+                                    </div>
+                                    <div class="media-body">
+                                        <p class="media-heading no-m medium caps">Марина Андреева</p>
+                                        <p class="small">Ведущий консультант</p>
+                                        <p class="medium t-blue">+7 (495) 232 6703</p>
+                                    </div>
+                                </div>
+                                <div class="phone-form m-t">
+                                    <form class="form split-form_upright responsive-form" action="">
+                                        <input type="text" placeholder="Имя">
+                                        <input type="tel" class="phone-number" placeholder="+7 (___) ___-__-__">
+                                        <button class="action-submit pure-button">Оставить заявку на просмотр</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="object-recommended content-box m-t">
+                               <p class="content-subtitle text-elegant">Рекомендуем</p>
+                                <div class="media">
+                                    <div class="media-left media-middle">
+                                        <a href="#"><img class="media-object" src="img/placeholder/rec-1.png"></a>
+                                    </div>
+                                    <div class="media-body media-middle">
+                                        <p class="media-heading caps text-elegant">Дома в парке: новые проекты в Хамовниках</p>
+                                        <p>Хамовники – это просторные улицы, с которых открывается прекрасный вид на самый центр столицы. Район имеет уникальные преимущества для жилья, не будучи перенасыщен промышленными и административными объектами.</p>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#"><img class="media-object" src="img/placeholder/rec-2.png"></a>
+                                    </div>
+                                    <div class="media-body media-middle">
+                                        <p class="media-heading caps text-elegant">Квартиры в Лондоне</p>
+                                        <p>Компания «EVANS» предлагает квартиры в удачно расположенных проектах и новостройках в Лондоне, записи на продажи могут начинаться за 3-4 месяца до выхода объектов на рынок. В настоящее время спрос на качественные квартиры в Лондоне в несколько раз превышает предложение.</p>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-left media-middle">
+                                        <a href="#"><img class="media-object" src="img/placeholder/rec-3.png"></a>
+                                    </div>
+                                    <div class="media-body media-middle">
+                                        <p class="media-heading caps text-elegant">Продажа дома в посёлке «Стольное»</p>
+                                        <p>Идеальный европейский дом в современном стиле, наполнен светом и готов для счастливой жизни на открытом воздухе.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <div class="footer pure-u-24-24">
+                    <p class="align-center">&copy; Evans, 2014</p>
+                    <div class="footer-menu pure-menu pure-menu-horizontal align-center">
+                        <ul class="pure-menu-list">
+                            <li class="pure-menu-item"><a href="#" class="pure-menu-link">О компании</a>
+                            </li>
+                            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Партнёры</a>
+                            </li>
+                            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Карьера</a>
+                            </li>
+                            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Словарь</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div><!-- content-box -->
+        </div><!-- main-content -->
+    </div>
+
+        <script src="js/custom.js" type="text/javascript"></script>
+</body>
+
+</html>
