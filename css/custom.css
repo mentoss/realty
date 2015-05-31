@@ -4,7 +4,7 @@
     HTML | GLOBAL
    ========================================================================== */
 html { min-width: 1263px; }
-body { font-size: 14px; color: #444; }
+body { font-size: 13px; color: #444; }
 
 .pure-g [class *="pure-u"] { font-family: 'AvenirNext', sans-serif; font-weight: 500; box-sizing: border-box; } /* тест */
 
@@ -142,7 +142,7 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 .company > a { text-transform: uppercase; letter-spacing: .2em; font-weight: 300; color: #fff; }
 .company sup { top: -1em; font-size: .4em; }
 
-.filter-item_name { margin: 3em 0 .3em; font-family: 'Copperplate'; font-size: .85em; text-transform: uppercase; color: #00bbd6; }
+.filter-item_name { margin: 3em 0 .3em; font-family: 'Copperplate'; text-transform: uppercase; color: #00bbd6; }
 
 /* перекрасили текст в кнопках */
 .filter-panel .button { color: #eee; }
@@ -151,7 +151,7 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 
 /* _____ MAIN CONTENT _____ */
 
-.content-layout { padding-top: 1.5em; }
+.content-layout { max-width: 928px; padding-top: 1.5em; }
 
 .content-box { padding: 16px 20px 8px; }
 
@@ -199,12 +199,13 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 .object-list { margin-top: 2em; }
 .object-list_item { margin-bottom: 3em;  }
 .object-list_item .object_wrap { margin-right: 1em; }
-.object-list_item img { max-width: 100%; }
-.object-list_item .obj-name { margin:1em 0 0; font-size: 1.1em; line-height: 1.3em; text-transform: uppercase; }
+.obj-avatar img { max-width: 100%; border-radius: 5px; }
+.object-list_item .obj-name { margin:1em 0 0; line-height: 1.3em; text-transform: uppercase; }
 .object-list_item .district { margin-bottom: 1em; font-size: .9em; color: #999; }
 .object-list_item .obj-description { height: 110px; overflow: hidden; }
 .object-list_item .item_prise { margin: 0; font-size: 1.1em; color: #1a5f68; }
 
+.box-title { margin: 0 0 .5em; font-family: 'Copperplate'; vertical-align: top; text-transform: uppercase; font-size:1.2em; font-weight: 500; }
 .content-title { margin: 0 0 .5em; font-family: 'Copperplate'; vertical-align: top; text-transform: uppercase; font-size: 2em; font-weight: 500; }
 .object-articul { font-family: 'Avenir Next', sans-serif; font-size: 13pt; }
 /* добавить в избранное */
