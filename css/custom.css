@@ -75,7 +75,7 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 /* color */
 .t-blue { color: #1a8696; }
 
-.text-elegant { font-family: 'Copperplate'; }
+.text-elegant { font-family: 'Copperplate'; letter-spacing: .05em; }
 
 /* ==========================================================================
     LAYOUT
@@ -242,11 +242,11 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 
 
 /* _____ FOOTER _____ */
-.footer { height: 120px; margin-top: 50px; color: #999; }
+.footer { margin-top: 50px; color: #999; }
 
 .footer-index { height: auto; margin-top: 0px; padding: 10px 0;}
 .footer-index .footer-menu ul { border-top: none; }
 
-.footer-menu { font-family: 'Copperplate'; font-size: 13pt; font-weight: normal; }
-.footer-menu ul { padding-top: 20px; border-top: 1px solid #ccc; text-transform: uppercase; }
-.footer-menu a {   padding: .5em 2em; color: #999; }
+.footer-menu { border-top: 1px solid #ccc; font-family: 'Copperplate'; font-size: 1em 1.2em; letter-spacing: .05em; }
+.footer-menu ul { text-transform: uppercase; }
+.footer-menu a { padding: 1em; color: #999; }

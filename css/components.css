@@ -102,7 +102,7 @@ p .button { padding: .3em .6em; }
 .media-body { display: table-cell; vertical-align: top; }
 .media-middle { vertical-align: middle; }
 .media-bottom { vertical-align: bottom; }
-.media-heading { margin-top: 0; margin-bottom: 5px; line-height: 1; font-size: 13pt; }
+.media-heading { margin-top: 0; margin-bottom: 5px; line-height: 1; font-size: 1em; }
 .media-list { padding-left: 0; list-style: none; }
 
 
@@ -144,3 +144,4 @@ p .button { padding: .3em .6em; }
 .fotorama__arr.fotorama__arr--prev:after { background-position: 0 0; }
 .fotorama__arr.fotorama__arr--prev:hover:after { background-position: 0 -48px; }
 .fotorama__nav { text-align: left !important; }
+.fotorama__thumb img { border-radius: 5px !important; }

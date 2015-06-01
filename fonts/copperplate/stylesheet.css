@@ -2,10 +2,10 @@
 
 @font-face {
 	font-family: 'Copperplate';
-	src: url('Copperplate.eot');
-	src: url('Copperplate.eot?#iefix') format('embedded-opentype'),
-		url('Copperplate.woff') format('woff'),
-		url('Copperplate.ttf')  format('truetype');
-	font-weight: normal;
+	src: url('Copperplate-Light.eot');
+	src: url('Copperplate-Light.eot?#iefix') format('embedded-opentype'),
+		url('Copperplate-Light.woff') format('woff'),
+		url('Copperplate-Light.ttf')  format('truetype');
+	font-weight: 300;
 	font-style: normal;
 }
