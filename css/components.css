@@ -144,4 +144,6 @@ p .button { padding: .3em .6em; }
 .fotorama__arr.fotorama__arr--prev:after { background-position: 0 0; }
 .fotorama__arr.fotorama__arr--prev:hover:after { background-position: 0 -48px; }
 .fotorama__nav { text-align: left !important; }
-.fotorama__thumb img { border-radius: 5px !important; }
+.fotorama__img,
+.fotorama__thumb img,
+.fotorama__thumb-border { border-radius: 5px !important; }
