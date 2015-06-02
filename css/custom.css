@@ -157,7 +157,7 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 
 .box-border-b { border-bottom: 1px solid #24ACC0; }
 
-.content-subtitle { margin-bottom: 0.3em; padding-right: 0px; text-transform: uppercase; color: #999; font-size: .9em; }
+.content-subtitle { margin-bottom: 0.3em; padding-right: 0px; text-transform: uppercase; color: #999; font-size: .85em; }
 
 /* ГЛАВНАЯ СТРАНИЦА */
 .prefilter-min { background: #00788a; padding: 4px 20px; text-align: center; }
@@ -206,8 +206,8 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 .object-list_item .item_prise { margin: 0; font-size: 1.1em; color: #1a5f68; }
 
 .box-title { margin: 0 0 .5em; font-family: 'Copperplate'; vertical-align: top; text-transform: uppercase; font-size:1.2em; font-weight: 500; }
-.content-title { margin: 0 0 .5em; font-family: 'Copperplate'; vertical-align: top; text-transform: uppercase; font-size: 2em; font-weight: 500; }
-.object-articul { font-family: 'Avenir Next', sans-serif; font-size: 13pt; }
+.content-title { margin: 0 0 .5em; font-family: 'Copperplate'; vertical-align: top; text-transform: uppercase; font-size: 1.5em; font-weight: 500; }
+.object-articul { font-size: 1em; }
 /* добавить в избранное */
 .content-title .add-bookmark { position: relative; top: 8px; color: #999; }
 .content-title .add-bookmark:hover { color: #FFCB00; }
