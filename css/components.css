@@ -147,3 +147,9 @@ p .button { padding: .3em .6em; }
 .fotorama__img,
 .fotorama__thumb img,
 .fotorama__thumb-border { border-radius: 5px !important; }
+
+.fotorama__stage { height: 290px !important; }
+.fotorama { margin-left: -63px; }
+.fotorama__wrap--css3 .fotorama__html,
+.fotorama__wrap--css3 .fotorama__stage .fotorama__img { width: 76% !important; height: auto !important; margin: 0 auto; }
+.fotorama__nav-wrap { width: 76%; margin-left: 60px; }
