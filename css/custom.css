@@ -195,6 +195,15 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 /* костыль - немного переоределили ширину сетки */
 .filter-object-form label.pure-u-1-2 { width: 49%; }
 
+/* OBJECT`S-TABLE */
+.objects-table { border: none; }
+.objects-table td, .objects-table th { border-left: none; }
+.objects-table th { border-bottom: none; }
+.objects-table { width: 100%; }
+.objects-table th { color: #999; font-size: .8em; font-weight: normal; text-transform: uppercase; }
+.objects-table td img { width: 135px; }
+
+
 /* object-list */
 .object-list { margin-top: 2em; }
 .object-list_item { margin-bottom: 3em;  }
