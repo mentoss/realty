@@ -204,9 +204,9 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 .objects-table td { padding-top: 1em; padding-bottom: 2em; }
 .objects-table .obj_mark { width: 50px; font-size: .85em; color: #999; }
 .objects-table .obj_name { width: 150px;  font-family: 'Copperplate'; letter-spacing: .05em; font-weight: bold; text-transform: uppercase; }
-.objects-table .obj_address { width: 195px; }
+.objects-table .obj_address { width: 190px; }
 .objects-table .obj_area { width: 90px; }
-.objects-table .obj_rums { width: 110px; }
+.objects-table .obj_rums { width: 115px; }
 .objects-table .obj_prise { width: 90px; }
 .objects-table .obj_prise span { color: #00788A; }
 .objects-table .obj_img { width: 150px; }
