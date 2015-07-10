@@ -196,12 +196,22 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 .filter-object-form label.pure-u-1-2 { width: 49%; }
 
 /* OBJECT`S-TABLE */
-.objects-table { border: none; }
-.objects-table td, .objects-table th { border-left: none; }
-.objects-table th { border-bottom: none; }
-.objects-table { width: 100%; }
-.objects-table th { color: #999; font-size: .8em; font-weight: normal; text-transform: uppercase; }
-.objects-table td img { width: 135px; }
+.objects-table { width: 100%; border: none; margin-left: -1em; }
+.objects-table tr:hover td { background: #eee; }
+.objects-table td, .objects-table th { border-left: none; vertical-align: top; text-align: left; }
+.objects-table th { border-bottom: none; color: #999; font-size: .7em; font-weight: normal; text-transform: uppercase; }
+.objects-table th span { border-bottom: 1px dashed #999; }
+.objects-table td { padding-top: 1em; padding-bottom: 2em; }
+.objects-table .obj_mark { width: 50px; font-size: .85em; color: #999; }
+.objects-table .obj_name { width: 150px;  font-family: 'Copperplate'; letter-spacing: .05em; font-weight: bold; text-transform: uppercase; }
+.objects-table .obj_adress { width: 195px; }
+.objects-table .obj_area { width: 90px; }
+.objects-table .obj_rums { width: 110px; }
+.objects-table .obj_prise { width: 90px; }
+.objects-table .obj_prise span { color: #00788A; }
+.objects-table .obj_img { width: 150px; }
+.objects-table .obj_img img { max-width: 150px; border-radius: 5px; }
+.objects-table .obj_img .img-title { opacity: .99; border-radius: 0px 0px 5px 5px; margin-top: -28px; padding: 5px; background: rgba(0, 0, 0, 0.5); font-size: .8em; color: #fff; }
 
 
 /* object-list */
