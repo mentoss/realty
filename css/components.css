@@ -57,6 +57,14 @@ p .button { padding: .3em .6em; }
 .button-transparent { background: rgba(0, 0, 0, 0.7); color: #fff; }
 
 
+
+/* _____ CURRENCY-LIST _____ */
+.currency-list { position: relative; display: inline-block; list-style: none; margin: 0; padding: 0; }
+    .currency-list-item { }
+        .currency-list-link { }
+.currency-list:hover .currency-list-children { position: absolute; top:0px; display: block; }
+.currency-list-children { display: none; list-style: none;  }
+
 /* _____ BADGE _____ */
 
 .badge {
