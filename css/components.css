@@ -107,6 +107,18 @@ p .button { padding: .3em .6em; }
 
 
 
+/* _____ CUSTOM ICON _____ */
+
+/* Menu */
+[class^="ico_menu_"] { display: inline-block; width: 36px; height: 37px; background: url(../img/sprite_menu.png) no-repeat; }
+.pure-menu-active .ico_menu_home { background-position: 0px -37px; }
+.ico_menu_search { background-position: -37px 0px;  }
+.pure-menu-active .ico_menu_search { background-position: -37px -37px;  }
+.ico_menu_services { background-position: -74px 0px; }
+.pure-menu-active .ico_menu_services { background-position: -74px -37px; }
+
+
+
 /* _____ ICON-WORKS _____ */
 
 .ico_w { font-family: 'icon-worksregular'; font-style: inherit; }
