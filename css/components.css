@@ -59,11 +59,16 @@ p .button { padding: .3em .6em; }
 
 
 /* _____ CURRENCY-LIST _____ */
-.currency-list { position: relative; display: inline-block; list-style: none; margin: 0; padding: 0; }
-    .currency-list-item { }
-        .currency-list-link { }
-.currency-list:hover .currency-list-children { position: absolute; top:0px; display: block; }
-.currency-list-children { display: none; list-style: none;  }
+.currency-list { padding: 0px;  }
+.currency-list .jq-selectbox__trigger { display: none;  }
+.currency-list .jq-selectbox__select { height: 10px; border: none; background: none; box-shadow: none; text-shadow: none; padding: 5px; font-size: 1.2em; color: #fff;  }
+.currency-list .jq-selectbox__select:hover { background: none;  }
+.currency-list.jq-selectbox.focused .jq-selectbox__select { border: none; }
+.currency-list .jq-selectbox__select-text { margin-top: -10px;  }
+.currency-list .jq-selectbox__dropdown { top: -1px !important; left: -1px !important; border: 1px solid #00C5DC; box-shadow: none; width: 33px; padding: 5px; }
+.currency-list .jq-selectbox__dropdown li { padding: 2px 5px; }
+.currency-list .jq-selectbox li:hover { background-color: #00C5DC; }
+
 
 /* _____ BADGE _____ */
 
