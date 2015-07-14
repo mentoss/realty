@@ -59,6 +59,7 @@ p .button { padding: .3em .6em; }
 
 
 /* _____ CURRENCY-LIST _____ */
+.currency { margin-bottom: 10px; }
 .currency-list { padding: 0px;  }
 .currency-list .jq-selectbox__trigger { display: none;  }
 .currency-list .jq-selectbox__select { height: 10px; border: none; background: none; box-shadow: none; text-shadow: none; padding: 5px; font-size: 1.2em; color: #fff;  }
