@@ -27,6 +27,8 @@ a { color: #1a8696;
 }
 a:hover { color: #1CCBE5; }
 
+sub, sup { font-size:.6em; }
+
 /* ==========================================================================
     HELPER
    ========================================================================== */
@@ -74,6 +76,7 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 
 /* color */
 .t-blue { color: #1a8696; }
+.muted { color: #ccc; }
 
 .text-elegant { font-family: 'Copperplate'; letter-spacing: .05em; }
 
@@ -195,7 +198,9 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 /* костыль - немного переоределили ширину сетки */
 .filter-object-form label.pure-u-1-2 { width: 49%; }
 
-/* OBJECT`S-TABLE */
+/* OBJECT`S-TABLE
+    TODO: проверить зависимости с другими превью объекта
+ */
 .objects-table { width: 100%; border: none; margin-left: -1em; }
 .objects-table tr:hover td { background: #eee; }
 .objects-table td, .objects-table th { border-left: none; vertical-align: top; text-align: left; }
@@ -211,35 +216,43 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 .objects-table .obj_prise span { color: #00788A; }
 .objects-table .obj_img { width: 150px; }
 .objects-table .obj_img img { max-width: 150px; border-radius: 5px; }
-.objects-table .obj_img .img-title { opacity: .99; border-radius: 0px 0px 5px 5px; margin-top: -28px; padding: 5px; background: rgba(0, 0, 0, 0.7); font-size: .8em; color: #fff; }
+.obj_img .img-title { opacity: .99; border-radius: 0px 0px 5px 5px; margin-top: -28px; padding: 5px; background: rgba(0, 0, 0, 0.7); font-size: .8em; color: #fff; }
 
-
-/* object-list */
+/* ??????????????????????????????????????????????????????????????????????????
+    object-list
+     TODO: проверить зависимости с другими превью объекта
+*/
 .object-list { margin-top: 2em; }
 .object-list_item { margin-bottom: 3em;  }
 .object-list_item .object_wrap { margin-right: 1em; }
 .obj-avatar img { max-width: 100%; border-radius: 5px; }
-.object-list_item .obj-name { margin:1em 0 0; line-height: 1.3em; text-transform: uppercase; }
+.object-list_item .obj-name { font-family: 'Copperplate'; margin:1em 0 0; line-height: 1.3em; text-transform: uppercase; font-weight: 700; }
 .object-list_item .district { margin-bottom: 1em; font-size: .9em; color: #999; }
 .object-list_item .obj-description { height: 110px; overflow: hidden; }
 .object-list_item .item_prise { margin: 0; font-size: 1.1em; color: #1a5f68; }
 
 .box-title { margin: 0 0 .5em; font-family: 'Copperplate'; vertical-align: top; text-transform: uppercase; font-size:1.2em; font-weight: 500; }
-.content-title { margin: 0 0 .5em; font-family: 'Copperplate'; vertical-align: top; text-transform: uppercase; font-size: 1.5em; font-weight: 500; }
+.content-title { margin: 0 0 .5em; font-family: 'Copperplate'; vertical-align: top; text-transform: uppercase; font-weight: 500; }
 .object-articul { font-size: 1em; }
-/* добавить в избранное */
+
+/* ??????????????????????????????????????????????????????????????????????????
+    добавить в избранное */
 .content-title .add-bookmark { position: relative; top: 8px; color: #999; }
 .content-title .add-bookmark:hover { color: #FFCB00; }
 .add-bookmark.active { color: #FFCB00 !important; }
+
 /* описание объекта */
 .object-content { margin-bottom: 1.5em; }
+
 /* цена */
 .object-price .fa-stack { font-size: .85em; color: #24ACC0; }
+
 /* схема объекта - картинка */
 .object-scheme { position: relative;  }
 .object-scheme_wrap { width: 101px; position: absolute; background: rgba(0, 0, 0, 0.3); top: 0px; bottom: 0px; border-radius: 5px; }
 .object-scheme [class^="icon-"] { position: absolute; top: 30%; left: 35px; color: #999; font-size: 3em; color: #eee; }
 .object-scheme img { max-width: 100px; border: 1px solid #eee; }
+
 /* подробная информация об объекте */
 .object-features { margin-top: 2em; }
 .object-features li { display: inline-block; width: 49.5%; margin-bottom: 1em; vertical-align: top; letter-spacing: normal; }
@@ -250,15 +263,28 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 .phone-form input:first-child { border-bottom: none; }
 .phone-form .action-submit { width: 298px; border-radius: 0 0 6px 6px; background: #004D57; padding: .7em 1em; text-transform: uppercase; color: #fff; }
 
+/* Объекты по теме ВНИЗУ
+    TODO: проверить зависимости с другими превью объекта
+ */
+.relevant-object-bottom { position: fixed; left: 335px; bottom: 0px; right: 0px; height: 450px; min-width: 928px; padding-top: 20px; background: #FFF; box-shadow: 0px 0px 30px #CCC; z-index: 99; }
+.relevant-object-bottom .obj-id { margin-top: .5em; }
+.relevant-object-bottom .obj-id .favorites.active,
+.relevant-object-bottom .obj-id .favorites.active:hover { color: #ffd700; }
+.relevant-object-bottom .obj-id .favorites:hover { color: #ffe866; }
+.relevant-object-bottom .object-price { margin: .2em 0; color: #24ACC0; }
+.relevant-object-bottom .btn-fullscreen { position: absolute; bottom: 20px; left: 20px; }
 
-/* Объекты по теме ВНИЗУ */
-.relevant-obgect-bottom { position: fixed; left: 335px; bottom: 0px; right: 0px; height: 450px; min-width: 928px; padding-top: 20px; background: #FFF; box-shadow: 0px 0px 30px #CCC; z-index: 99; }
-.relevant-obgect-bottom .item_prise + .obj-description { height: 87px; }
-.relevant-obgect-bottom .btn-fullscreen { position: absolute; bottom: 20px; left: 20px; }
+.relevant-object-slider .fotorama__arr { background: none !important; width: 50px !important; height: 47px !important; }
+.relevant-object-slider .fotorama__arr.fotorama__arr--next:after,
+.relevant-object-slider .fotorama__arr.fotorama__arr--prev:after { display: block; content: ""; width: 50px; height: 47px; background: url(../img/template/slider_arr.png) no-repeat; position: relative; }
+.relevant-object-slider .fotorama__arr.fotorama__arr--next:after { background-position: -50px 0; }
+.relevant-object-slider .fotorama__arr.fotorama__arr--next:hover:after { background-position: -50px -48px; }
+.relevant-object-slider .fotorama__arr.fotorama__arr--prev:after { background-position: 0 0; }
+.relevant-object-slider .fotorama__arr.fotorama__arr--prev:hover:after { background-position: 0 -48px; }
+.relevant-object-slider .fotorama__nav { text-align: left !important; }
+
 
 .filter-up { position: absolute; background: #FFF; z-index: 9; }
-
-
 
 /* _____ FOOTER _____ */
 .footer { margin-top: 50px; color: #999; }

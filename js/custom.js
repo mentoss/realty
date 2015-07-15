@@ -37,12 +37,12 @@ function facechange(objName) {
         $(objName).animate({
             height: 'show'
         }, 400);
-        $('.relevant-obgect-bottom').animate({height:"+=79"});
+        $('.relevant-object-bottom').animate({height:"+=100"});
     } else {
         $(objName).animate({
             height: 'hide'
         }, 200);
-        $('.relevant-obgect-bottom').animate({height:"-=79"});
+        $('.relevant-object-bottom').animate({height:"-=100"});
     }
 };
 
