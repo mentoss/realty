@@ -12,10 +12,10 @@ body { font-size: 13px; color: #444; }
     TYPOGRAPHY
    ========================================================================== */
 
-h1 { font-size: 1.8em; }
-h2 { font-size: 1.5em; }
-h3 { font-size: 1.2em; }
-h4 { font-size: 1em; font-weight: bold; }
+h1,.h1 { font-size: 1.8em; }
+h2,.h2 { font-size: 1.5em; }
+h3,.h3 { font-size: 1.2em; }
+h4,.h4 { font-size: 1em; font-weight: bold; }
 
 p { margin: 0 0 1em; line-height: 1.5em; }
 
@@ -223,7 +223,6 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
      TODO: проверить зависимости с другими превью объекта
 */
 .object-list { margin-top: 2em; }
-.object-list_item { margin-bottom: 3em;  }
 .object-list_item .object_wrap { margin-right: 1em; }
 .obj-avatar img { max-width: 100%; border-radius: 5px; }
 .object-list_item .obj-name { font-family: 'Copperplate'; margin:1em 0 0; line-height: 1.3em; text-transform: uppercase; font-weight: 700; }
@@ -266,7 +265,7 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 /* Объекты по теме ВНИЗУ
     TODO: проверить зависимости с другими превью объекта
  */
-.relevant-object-bottom { position: fixed; left: 335px; bottom: 0px; right: 0px; height: 450px; min-width: 928px; padding-top: 20px; background: #FFF; box-shadow: 0px 0px 30px #CCC; z-index: 99; }
+.relevant-object-bottom { position: fixed; left: 335px; bottom: 0px; right: 0px; min-width: 928px; padding-top: 20px; background: #FFF; box-shadow: 0px 0px 30px #CCC; z-index: 99; }
 .relevant-object-bottom .obj-id { margin-top: .5em; }
 .relevant-object-bottom .obj-id .favorites.active,
 .relevant-object-bottom .obj-id .favorites.active:hover { color: #ffd700; }
