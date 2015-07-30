@@ -117,24 +117,33 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 
 /* _____ MAIN-MENU _____ */
 
+/* lang-select */
+
+
 .sidebar-menu { display: table; background: #004d57; }
 .sidebar-menu .nav-inner { display: table-cell; vertical-align: middle; }
+
 /* выбор языка */
 .lang-select { position: absolute; width: 100%; top: 0; text-align: center; }
+.lang-select:hover { height: 100%; background: #002730; z-index: 999; }
+.lang-select .pure-menu-link { padding: 0;  }
+.lang-select .pure-menu-active>.pure-menu-link,
+.lang-select .pure-menu-link:hover, .pure-menu-link:focus { background-color: transparent; }
+
 /* отступы между пунктами */
-.sidebar-menu .pure-menu-link { padding: 1em 0;   font-weight: 400; }
+.sidebar-menu .main-menu .pure-menu-link { padding: 1em 0;   font-weight: 400; }
 /* цвет пункта меню */
 .pure-menu-link { color: #24ACC0; }
 /* цвет активного пункта меню */
 .pure-menu-active .pure-menu-link { color: #eee; }
 /* убрали выделение пункта активного раздела */
-.sidebar-menu .pure-menu-active>.pure-menu-link,
-.sidebar-menu .pure-menu-active>.pure-menu-link:hover,
-.sidebar-menu .pure-menu-active>.pure-menu-link:focus  { background-color: transparent; }
+.sidebar-menu .main-menu .pure-menu-active>.pure-menu-link,
+.sidebar-menu .main-menu .pure-menu-active>.pure-menu-link:hover,
+.sidebar-menu .main-menu .pure-menu-active>.pure-menu-link:focus  { background-color: transparent; }
 /* подсветили при наведении */
-.sidebar-menu .pure-menu-link:hover,
-.sidebar-menu .pure-menu-link:focus { background-color: #115861; }
-.sidebar-menu .pure-menu-link [class^="icon-"] { vertical-align: 0%; }
+.sidebar-menu .main-menu .pure-menu-link:hover,
+.sidebar-menu .main-menu .pure-menu-link:focus { background-color: #115861; }
+.sidebar-menu .main-menu .pure-menu-link [class^="icon-"] { vertical-align: 0%; }
 
 
 

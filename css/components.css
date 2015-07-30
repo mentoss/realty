@@ -139,6 +139,13 @@ p .button { padding: .3em .6em; }
 
 
 
+/* _____ ICON-LANGUAGE _____ */
+
+[class^="ico_language"] { display: inline-block; background: url(../img/sprite_language.png) no-repeat; }
+.ico_language_ru { width: 37px; height: 38px; }
+.ico_language_ru { width: 37px; height: 38px; }
+.pure-menu-activ .ico_language_ru { width: 36px; height: 20px; background-position: -44px -18px; }
+
 /* _____ jQueryFormStyler _____ */
 
 /* полный фильтр объектов */
