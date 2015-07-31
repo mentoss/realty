@@ -117,18 +117,18 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 
 /* _____ MAIN-MENU _____ */
 
-/* lang-select */
-
-
 .sidebar-menu { display: table; background: #004d57; }
 .sidebar-menu .nav-inner { display: table-cell; vertical-align: middle; }
 
 /* выбор языка */
 .lang-select { position: absolute; width: 100%; top: 0; text-align: center; }
+.lang-select .pure-menu-list,
+.lang-select .pure-menu-item { width: 100%; }
 .lang-select:hover { height: 100%; background: #002730; z-index: 999; }
-.lang-select .pure-menu-link { padding: 0;  }
-.lang-select .pure-menu-active>.pure-menu-link,
+.lang-select .active-lang { padding: 0 0 .5em;  }
+.lang-select >.pure-menu-link,
 .lang-select .pure-menu-link:hover, .pure-menu-link:focus { background-color: transparent; }
+.lang-select .pure-menu-children { background-color: transparent; }
 
 /* отступы между пунктами */
 .sidebar-menu .main-menu .pure-menu-link { padding: 1em 0;   font-weight: 400; }
@@ -159,7 +159,13 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 /* перекрасили текст в кнопках */
 .filter-panel .button { color: #eee; }
 
-
+/* Выбрать из списка */
+.items-select { }
+.items-select .pure-menu-children { background-color: #004d57; top: 3px; left: -50px; right: -50px; border-radius: 3px; padding: 1em 0; }
+.items-select .pure-menu-item .pure-menu-children .pure-menu-item { display: block; width: 50%; float: left; }
+.items-select .pure-menu-item .pure-menu-children .pure-menu-item .pure-menu-link { padding: .5em 1em; text-align: left; font-size: .85em; color: #eee; }
+.items-select .pure-menu-active>.pure-menu-link,
+.items-select .pure-menu-link:hover, .pure-menu-link:focus { background-color: transparent; text-decoration: underline; }
 
 /* _____ MAIN CONTENT _____ */
 
@@ -189,7 +195,7 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 /* убрали иконку справа в выпадающем меню */
 .pure-menu-has-children>.pure-menu-link:after,
 .pure-menu-horizontal .pure-menu-has-children>.pure-menu-link:after { content: none; }
-.pure-menu-horizontal .pure-menu-children { left: inherit; right: 0px; }
+.user-select.pure-menu-horizontal .pure-menu-children { left: inherit; right: 0px; }
 
 /* фильтры - выбор услуг */
 .filter-panel_toolbar .button:hover { color: #eee; }
@@ -217,6 +223,8 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 .objects-table th span { border-bottom: 1px dotted #999; }
 .objects-table td { padding-top: 1em; padding-bottom: 2em; }
 .objects-table .obj_mark { width: 50px; font-size: .85em; color: #999; }
+.objects-table .obj_mark .wishlist { color: #999; }
+.objects-table .obj_mark .wishlist_yes { color: gold; }
 .objects-table .obj_name { width: 150px;  font-family: 'Copperplate'; letter-spacing: .05em; font-weight: bold; text-transform: uppercase; }
 .objects-table .obj_address { width: 190px; }
 .objects-table .obj_area { width: 90px; }
@@ -244,7 +252,9 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 .object-articul { font-size: 1em; }
 
 /* ??????????????????????????????????????????????????????????????????????????
-    добавить в избранное */
+    добавить в избранное 
+    TODO: проверить нужно ли это
+*/
 .content-title .add-bookmark { position: relative; top: 8px; color: #999; }
 .content-title .add-bookmark:hover { color: #FFCB00; }
 .add-bookmark.active { color: #FFCB00 !important; }

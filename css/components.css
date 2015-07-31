@@ -143,8 +143,22 @@ p .button { padding: .3em .6em; }
 
 [class^="ico_language"] { display: inline-block; background: url(../img/sprite_language.png) no-repeat; }
 .ico_language_ru { width: 37px; height: 38px; }
-.ico_language_ru { width: 37px; height: 38px; }
-.pure-menu-activ .ico_language_ru { width: 36px; height: 20px; background-position: -44px -18px; }
+.active-lang .ico_language_ru { width: 36px; height: 20px; background-position: -44px -18px; }
+
+.ico_language_spain { width: 37px; height: 38px; background-position: 0px -43px; }
+.active-lang .ico_language_spain { width: 36px; height: 20px; background-position: -44px -60px; }
+
+.ico_language_fr { width: 37px; height: 38px; background-position: 0px -84px; }
+.active-lang .ico_language_fr { width: 36px; height: 20px; background-position: -44px -18px; }
+
+.ico_language_it { width: 37px; height: 38px; background-position: 0px -128px; }
+.active-lang .ico_language_it { width: 36px; height: 20px; background-position: -44px -18px; }
+
+.ico_language_ger { width: 37px; height: 38px; background-position: 0px -169px; }
+.active-lang .ico_language_ger { width: 36px; height: 20px; background-position: -44px -186px; }
+
+.ico_language_eng { width: 37px; height: 38px; background-position: 0px -212px; }
+.active-lang .ico_language_eng { width: 36px; height: 20px; background-position: -44px -231px; }
 
 /* _____ jQueryFormStyler _____ */
 

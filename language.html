@@ -49,16 +49,19 @@
         <!-- MAIN MENU ------------------------------------------------------------->
         <div class="sidebar-menu pure-u">
             <div class="nav-inner">
-                <div class="pure-menu align-center caps">
-
-                    <div class="lang-select">
+                <div class="pure-menu align-center caps">                    
+                    
+                    <!-- смена флага происходит сменой класса в а.active-lang > .ico_language_ru -->
+                    <div class="lang-select pure-menu pure-menu-horizontal">
                         <ul class="pure-menu-list">
-                            <li class="pure-menu-item pure-menu-activ pure-menu-has-children pure-menu-allow-hover">
-                                <a href="#" class="pure-menu-link"><i class="ico_language_ru"></i></a>
+                            <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                                <a href="#" class="active-lang pure-menu-link"><i class="ico_language_ru"></i></a>
                                 <ul class="pure-menu-children">
-                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link"><i class="ico_language_ru"></i></a></li>
-                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link"><i class="ico_language_ru"></i></a></li>
-                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link"><i class="ico_language_ru"></i></a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link"><i class="ico_language_spain"></i></a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link"><i class="ico_language_fr"></i></a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link"><i class="ico_language_it"></i></a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link"><i class="ico_language_ger"></i></a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link"><i class="ico_language_eng"></i></a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -106,8 +109,25 @@
                     <a class="button btn-on-bg pure-button">Испания</a>
                     <a class="button btn-on-bg pure-button">Германия</a>
                     <a class="button btn-on-bg pure-button">Франция</a>
-                    <br>
-                    <a class="button btn-on-bg pure-button"><span class="icon-options"></span> Выбрать из списка</a>
+                    <div class="items-select pure-menu pure-menu-horizontal">
+                        <ul class="pure-menu-list">                            
+                            <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                                <a href="#" class="pure-menu-link button btn-on-bg pure-button"><span class="ico-fontello-list"></span> Выбрать из списка</a>
+                                <ul class="pure-menu-children">
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">США</a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Испания</a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Германия</a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Франция</a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Германия</a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">США</a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Испания</a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Мадрид</a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Франция</a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Англия</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>                    
                 </div>
             </div>
 
@@ -121,8 +141,25 @@
                     <a class="button btn-on-bg pure-button">Мадрид</a>
                     <a class="button btn-on-bg pure-button">Москва</a>
                     <a class="button btn-on-bg pure-button">Франция</a>
-                    <br>
-                    <a class="button btn-on-bg pure-button"><span class="icon-options"></span> Выбрать из списка</a>
+                    <div class="items-select pure-menu pure-menu-horizontal">
+                        <ul class="pure-menu-list">                            
+                            <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                                <a href="#" class="pure-menu-link button btn-on-bg pure-button"><span class="ico-fontello-list"></span> Выбрать из списка</a>
+                                <ul class="pure-menu-children">
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">США</a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Испания</a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Германия</a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Франция</a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Германия</a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">США</a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Испания</a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Мадрид</a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Франция</a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Англия</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -140,8 +177,25 @@
                     <a class="button btn-on-bg pure-button">Лизинг</a>
                     <a class="button btn-on-bg pure-button">Обслуживание</a>
                     <a class="button btn-on-bg pure-button">Строительство</a>
-                    <br>
-                    <a class="button btn-on-bg pure-button"><span class="icon-options"></span> Выбрать из списка</a>
+                    <div class="items-select pure-menu pure-menu-horizontal">
+                        <ul class="pure-menu-list">                            
+                            <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                                <a href="#" class="pure-menu-link button btn-on-bg pure-button"><span class="ico-fontello-list"></span> Выбрать из списка</a>
+                                <ul class="pure-menu-children">
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">США</a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Испания</a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Германия</a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Франция</a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Германия</a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">США</a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Испания</a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Мадрид</a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Франция</a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Англия</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -156,8 +210,25 @@
                     <a class="button btn-on-bg pure-button">Участок</a>
                     <a class="button btn-on-bg pure-button">Этаж</a>
                     <a class="button btn-on-bg pure-button">Комната</a>
-                    <br>
-                    <a class="button btn-on-bg pure-button"><span class="icon-options"></span> Выбрать из списка</a>
+                    <div class="items-select pure-menu pure-menu-horizontal">
+                        <ul class="pure-menu-list">                            
+                            <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                                <a href="#" class="pure-menu-link button btn-on-bg pure-button"><span class="ico-fontello-list"></span> Выбрать из списка</a>
+                                <ul class="pure-menu-children">
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">США</a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Испания</a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Германия</a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Франция</a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Германия</a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">США</a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Испания</a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Мадрид</a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Франция</a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Англия</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -197,14 +268,14 @@
                         <div class="button-group">
                             <span class="button b_active pure-button">Англия <a href="#"><span class="icon-cross li-sm"></span></a></span>
                             <span class="button b_active pure-button">Лондон <a href="#"><span class="icon-cross li-sm"></span></a></span>
-                            <a class="button pure-button"><span class="icon-options"></span> Выбрать район</a>
-                            <a class="button pure-button"><span class="icon-options"></span> Метро</a>
+                            <a class="button pure-button"><span class="ico-fontello-list"></span> Выбрать район</a>
+                            <a class="button pure-button"><span class="ico-fontello-list"></span> Метро</a>
                             <a class="button pure-button">Указать улицу</a>
                         </div>
                         <div class="button-group">
                             <span class="button b_active pure-button">Жилая <a href="#"><span class="icon-cross li-sm"></span></a></span>
-                            <a class="button pure-button"><span class="icon-options"></span> Местность</a>
-                            <a class="button pure-button"><span class="icon-options"></span> Тип</a>
+                            <a class="button pure-button"><span class="ico-fontello-list"></span> Местность</a>
+                            <a class="button pure-button"><span class="ico-fontello-list"></span> Тип</a>
                         </div>
                         <a class="button b_active pure-button">Инвестиции <span class="icon-cross li-sm"></span></a>
                     </div>
@@ -250,7 +321,7 @@
                 </div>
 
                 <div class="full-filter-object_wrap pure-u-1-1 box-border-b">
-                    <p class="align-center m-t m-b"><a href="#" onclick="facechange('#block'); return false">РАСШИРЕННЫЙ ПОИСК <span class="icon-chevron-down"></span></a>
+                    <p class="align-center m-t m-b"><a href="#" onclick="facechange('#block'); return false">РАСШИРЕННЫЙ ПОИСК <span class="ico-fontello-down"></span></a>
                     </p>
                     <div id="block" class="full-filter-object box-border-b" style="display:none">
                         <div class="pure-g">
@@ -261,7 +332,7 @@
                                    <p class="content-subtitle">Удобства</p>
                                     <div class="pure-g">
                                         <div class="pure-u-1-2">
-                                            <p>ВНУТРИ</p>
+                                            <p>КЛАСС</p>
                                             <select class="width-90">
                                                 <option>Любой ремонт</option>
                                                 <option>Пункт 1</option>
@@ -270,50 +341,37 @@
                                                 <option>Пункт 4</option>
                                                 <option>Пункт 5</option>
                                             </select>
-                                            <br>
-                                            <label class="pure-u-1-2"><input type="checkbox" />  С мебелью</label>
-                                            <label class="pure-u-1-2"><input type="checkbox" /> С мебелью и стульями</label>
-                                            <label class="pure-u-1-2"><input type="checkbox" /> С охраной</label>
-                                            <label class="pure-u-1-2"><input type="checkbox" /> С цветами</label>
-                                            <label class="pure-u-1-2"><input type="checkbox" /> Балкон</label>
-                                            <label class="pure-u-1-2"><input type="checkbox" /> С роботом охранником</label>
-                                            <label class="pure-u-1-2"><input type="checkbox" /> С сауной</label>
-                                            <label class="pure-u-1-2"><input type="checkbox" /> С трудом</label>
-                                            <label class="pure-u-1-2"><input type="checkbox" /> С блэк-джеком и ...</label>
-                                            <label class="pure-u-1-2"><input type="checkbox" /> С фантазией</label>
-                                            <label class="pure-u-1-2"><input type="checkbox" /> С мебелью и без</label>
-                                            <label class="pure-u-1-2"><input type="checkbox" /> Парковкой</label>
-                                            <label class="pure-u-1-2"><input type="checkbox" /> С радостью</label>
-                                            <label class="pure-u-1-2"><input type="checkbox" /> С мебелью и столом</label>
-                                            <label class="pure-u-1-2"><input type="checkbox" /> С фантазией</label>
-                                            <label class="pure-u-1-2"><input type="checkbox" /> Фонтаном</label>
-                                            <label class="pure-u-1-2"><input type="checkbox" /> С мебелью и стульями</label>
-                                            <label class="pure-u-1-2"><input type="checkbox" /> С мебелью</label>
+                                            <p>ОХРАНА</p>
+                                            <select class="width-90">
+                                                <option>Любой ремонт</option>
+                                                <option>Пункт 1</option>
+                                                <option>Пункт 2</option>
+                                                <option>Какой-то пункт с очень длинным текстом</option>
+                                                <option>Пункт 4</option>
+                                                <option>Пункт 5</option>
+                                            </select>
+                                            <p>ИНФРАСТРУКТУРА</p>
+                                            <select class="width-90">
+                                                <option>Любой ремонт</option>
+                                                <option>Пункт 1</option>
+                                                <option>Пункт 2</option>
+                                                <option>Какой-то пункт с очень длинным текстом</option>
+                                                <option>Пункт 4</option>
+                                                <option>Пункт 5</option>
+                                            </select>
+                                            <label class="pure-u-1-2"><input type="checkbox" /> Парковка</label>
                                         </div>
 
                                         <div class="pure-u-1-2">
-                                            <p>РАСПОЛОЖЕНИЕ</p>
-                                            <label class="pure-u-1-2"><input type="checkbox" /> В центре</label>
-                                            <label class="pure-u-1-2"><input type="checkbox" /> В центре</label>
-                                            <label class="pure-u-1-2"><input type="checkbox" /> Окраина</label>
-                                            <label class="pure-u-1-2"><input type="checkbox" /> Окраина</label>
-                                            <label class="pure-u-1-2"><input type="checkbox" /> В центре</label>
-                                            <label class="pure-u-1-2"><input type="checkbox" /> Окраина</label>
-                                            <label class="pure-u-1-2"><input type="checkbox" /> Окраина</label>
-                                            <label class="pure-u-1-2"><input type="checkbox" /> Окраина</label>
-                                            <label class="pure-u-1-2"><input type="checkbox" /> В центре</label>
-                                            <label class="pure-u-1-2"><input type="checkbox" /> Окраина</label>
-                                            <label class="pure-u-1-2"><input type="checkbox" /> В центре</label>
-                                            <label class="pure-u-1-2"><input type="checkbox" /> В центре</label>
-                                            <label class="pure-u-1-2"><input type="checkbox" /> В центре</label>
+                                            <p class="content-subtitle">Дополнительно</p>
+                                            <label><input type="checkbox" /> В центре</label><br>
+                                            <label><input type="checkbox" /> Окраина</label>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="content-box pure-u-5-24">
-                                    <p class="content-subtitle">Дополнительно</p>
-                                    <label><input type="checkbox" /> В центре</label><br>
-                                    <label><input type="checkbox" /> Окраина</label>
+                                    
                                 </div>
                             </form>
                         </div>
@@ -350,7 +408,7 @@
                                 </tr>
                                 <tr>
                                     <td class="obj_mark">60 523
-                                        <br/><a href="#"></a></td>
+                                        <br/><a href="#"><span class="wishlist_yes ico-fontello-star extralarge"></span></a></td>
                                     <td class="obj_name">Москва, частный дом</td>
                                     <td class="obj_address">Северный район, м. Аэропорт, ул. Ленинская</td>
                                     <td class="obj_area">380</td>
@@ -364,7 +422,7 @@
                                 </tr>
                                 <tr>
                                     <td class="obj_mark">12 951
-                                        <br/><a href="#"></a></td>
+                                        <br/><a href="#"><span class="wishlist ico-fontello-star extralarge"></span></a></td>
                                     <td class="obj_name">Квартира</td>
                                     <td class="obj_address">Центральный округ, м. Третьяковская, ул. Пятницкая</td>
                                     <td class="obj_area">80</td>
@@ -374,7 +432,7 @@
                                 </tr>
                                 <tr>
                                     <td class="obj_mark">12 951
-                                        <br/><a href="#"></a></td>
+                                        <br/><a href="#"><span class="wishlist ico-fontello-star extralarge"></span></a></td>
                                     <td class="obj_name">Бизнес центр</td>
                                     <td class="obj_address">Центральный округ, м. Третьяковская, ул. Пятницкая</td>
                                     <td class="obj_area">От 800 до 1200</td>
@@ -384,7 +442,7 @@
                                 </tr>
                                 <tr>
                                     <td class="obj_mark">12 951
-                                        <br/><a href="#"></a></td>
+                                        <br/><a href="#"><span class="wishlist ico-fontello-star extralarge"></span></a></td>
                                     <td class="obj_name">Квартира</td>
                                     <td class="obj_address">Центральный округ, м. Третьяковская, ул. Пятницкая</td>
                                     <td class="obj_area">80</td>
@@ -394,7 +452,7 @@
                                 </tr>
                                 <tr>
                                     <td class="obj_mark">12 951
-                                        <br/><a href="#"></a></td>
+                                        <br/><a href="#"><span class="wishlist ico-fontello-star extralarge"></span></a></td>
                                     <td class="obj_name">Квартира</td>
                                     <td class="obj_address">Центральный округ, м. Третьяковская, ул. Пятницкая</td>
                                     <td class="obj_area">80</td>
