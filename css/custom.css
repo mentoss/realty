@@ -125,6 +125,8 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 .lang-select .pure-menu-list,
 .lang-select .pure-menu-item { width: 100%; }
 .lang-select:hover { height: 100%; background: #002730; z-index: 999; }
+.lang-select:hover .pure-menu-allow-hover>.pure-menu-children, 
+.pure-menu-active>.pure-menu-children { display: block; position: absolute; }
 .lang-select .active-lang { padding: 0 0 .5em;  }
 .lang-select >.pure-menu-link,
 .lang-select .pure-menu-link:hover, .pure-menu-link:focus { background-color: transparent; }
