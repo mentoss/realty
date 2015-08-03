@@ -124,9 +124,13 @@ ul.unstyled, ol.unstyled { list-style: none; padding-left: 0; }
 .lang-select { position: absolute; width: 100%; top: 0; text-align: center; }
 .lang-select .pure-menu-list,
 .lang-select .pure-menu-item { width: 100%; }
-.lang-select:hover { height: 100%; background: #002730; z-index: 999; }
-.lang-select:hover .pure-menu-allow-hover>.pure-menu-children, 
-.pure-menu-active>.pure-menu-children { display: block; position: absolute; }
+.lang-select_open { height: 100%; background: #002730; z-index: 999; }
+.lang-select_open .pure-menu-allow-hover > .pure-menu-children  { display: block; position: absolute; }
+.lang-select_open .pure-menu-allow-hover:hover>.pure-menu-children { display: block; }
+/* переопределили поведение фреймворка */
+.lang-select .pure-menu-allow-hover:hover > .pure-menu-children  { display: none ; }
+.lang-select_open .pure-menu-allow-hover:hover > .pure-menu-children  { display: block ; }
+
 .lang-select .active-lang { padding: 0 0 .5em;  }
 .lang-select >.pure-menu-link,
 .lang-select .pure-menu-link:hover, .pure-menu-link:focus { background-color: transparent; }

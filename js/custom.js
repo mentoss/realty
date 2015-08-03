@@ -46,8 +46,6 @@ function facechange(objName) {
     }
 };
 
-
-
  // стилизация элементов фильтра
 (function ($) {
     $(function () {
@@ -63,4 +61,9 @@ $(document).ready(function() {
 // phone mask
 jQuery(function($){
    $(".phone-number").mask("+7 (999) 999-99-99");
+});
+
+// lang-select
+$('.lang-select').click(function () {
+    $(this).toggleClass('lang-select_open');
 });
